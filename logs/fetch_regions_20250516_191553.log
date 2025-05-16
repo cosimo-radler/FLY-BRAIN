@@ -1,0 +1,29 @@
+2025-05-16 19:15:53,687 - fly_brain - INFO - Starting data fetch for 5 brain regions
+2025-05-16 19:15:53,688 - fly_brain - INFO - Using neuPrint server: https://neuprint.janelia.org
+2025-05-16 19:15:53,688 - fly_brain - INFO - Using dataset: hemibrain:v1.2.1
+2025-05-16 19:15:53,688 - fly_brain - INFO - Processing Ellipsoid Body (EB)
+2025-05-16 19:15:53,688 - fly_brain - INFO - Fetching neurons for EB
+2025-05-16 19:15:53,688 - fly_brain - INFO - Fetching neurons for region EB
+2025-05-16 19:15:55,076 - fly_brain - INFO - Found 0 neurons in region EB
+2025-05-16 19:15:55,077 - fly_brain - WARNING - No neurons found for EB
+2025-05-16 19:15:55,077 - fly_brain - INFO - Processing Fan-shaped Body (FB)
+2025-05-16 19:15:55,077 - fly_brain - INFO - Fetching neurons for FB
+2025-05-16 19:15:55,077 - fly_brain - INFO - Fetching neurons for region FB
+2025-05-16 19:15:55,697 - fly_brain - INFO - Found 0 neurons in region FB
+2025-05-16 19:15:55,698 - fly_brain - WARNING - No neurons found for FB
+2025-05-16 19:15:55,698 - fly_brain - INFO - Processing Mushroom Body (MB)
+2025-05-16 19:15:55,698 - fly_brain - INFO - Fetching neurons for MB
+2025-05-16 19:15:55,698 - fly_brain - INFO - Fetching neurons for region MB
+2025-05-16 19:15:56,191 - fly_brain - INFO - Found 0 neurons in region MB
+2025-05-16 19:15:56,191 - fly_brain - WARNING - No neurons found for MB
+2025-05-16 19:15:56,191 - fly_brain - INFO - Processing Lateral Horn (LH)
+2025-05-16 19:15:56,191 - fly_brain - INFO - Fetching neurons for LH
+2025-05-16 19:15:56,191 - fly_brain - INFO - Fetching neurons for region LH
+2025-05-16 19:15:56,847 - fly_brain - INFO - Found 0 neurons in region LH
+2025-05-16 19:15:56,847 - fly_brain - WARNING - No neurons found for LH
+2025-05-16 19:15:56,847 - fly_brain - INFO - Processing Antennal Lobe (AL)
+2025-05-16 19:15:56,847 - fly_brain - INFO - Fetching neurons for AL
+2025-05-16 19:15:56,847 - fly_brain - INFO - Fetching neurons for region AL
+2025-05-16 19:15:57,607 - fly_brain - INFO - Found 0 neurons in region AL
+2025-05-16 19:15:57,607 - fly_brain - WARNING - No neurons found for AL
+2025-05-16 19:15:57,607 - fly_brain - INFO - Completed processing 0/5 regions successfully

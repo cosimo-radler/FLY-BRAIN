@@ -1,0 +1,131 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Here are some high-level “ground rules” to keep your codebase clean, reproducible, and easy to extend as you carry out your in silico experiments:
+
+1. **One Responsibility per Module/Strict Directory**
+
+   * `data_io.py` only handles I/O, `preprocessing.py` only cleans and down-scales, etc.
+   * Avoid interleaving plotting or heavy logic in these core modules.
+
+
+   * data/raw/ only for API dumps or original edge-lists.
+   * data/processed/ only for cleaned graphs you’ll analyze.
+   * notebooks/ only for orchestration & plots—no core logic.
+   * src/ only for importable modules; no top-level scripts here.
+   * results/ only for output tables or figures.
+
+
+your_project/                      # Root of the analysis pipeline
+├── data/                         # All graph data files
+│   ├── raw/                      # └── Original downloads (form API)
+│   └── processed/                # └── Cleaned graphs (Self loop removed, and NetworkX readable...)
+│
+├── notebooks/                    # Jupyter notebooks for orchestration & exploration
+│   ├── 01_ingest.ipynb           # └── Download and load raw data into processed/
+│   ├── 02_describe.ipynb         # └── Compute & visualize descriptive metrics of originals
+│   ├── 03_nulls.ipynb            # └── Generate configuration models & sparsifiers, verify stats
+│   ├── 04_percolate.ipynb        # └── Run bond‐percolation simulations across models
+│   └── 05_summary.ipynb          #     └── Aggregate results, produce final figures & tables
+│
+├── src/                          # Python modules—core logic, importable by notebooks/scripts
+│   ├── data_io.py                # └── Functions to fetch, cache, and read/write graph files
+│   ├── preprocessing.py          # └── LCC extraction, down‐scaling degree/stub sequences, relabeling
+│   ├── metrics.py                # └── Compute network statistics (degree, clustering, path‐length, etc.)
+│   ├── null_models.py            # └── Build plain & clustered CMs, spectral sparsifiers, enforce connectivity
+│   ├── percolation.py            # └── Simulate bond removal (random/targeted) and record Sₘₐₓ(p)
+│   ├── analysis.py               # └── High‐level drivers to sweep parameters, collect results into DataFrames
+│   └── utils.py                  #     └── Helpers: random‐seed management, logging, plotting utilities
+│
+├── results/                      # Outputs from analyses
+│   ├── figures/                  # └── PNG/SVG plots for paper & presentations
+│   └── tables/                   #     └── CSV/TSV summary statistics for each experiment
+│
+├── environment.yml               # Conda environment specification (package versions)
+├── requirements.txt              # pip‐installable dependencies
+└── README.md                     # Project overview, setup instructions, and usage guide
+
+
+2. **Functions, Not Scripts**
+
+   * Encapsulate every operation in a function with clear inputs/outputs.
+   * Let notebooks or a top-level driver call those functions. 
+   * For now lets not work directly with note books but just test what we have implented in python scripts which we though save in the notebook folder. clearly comment those files 
+
+3. **Consistent Naming Conventions**
+
+   * Modules: lowercase underscores (`null_models.py`).
+   * Functions: verbs describing action (`build_plain_cm`).
+   * Variables: descriptive (`deg_seq`, not `d`).
+
+4. **Centralize Configuration**
+
+   * Keep all hyper-parameters (e.g. `n_targets`, attack strategies, seed lists) in one place (e.g. a `config.py` or a YAML/JSON file).
+   * Pass them around rather than hard-coding in multiple spots.
+
+5. **Reproducible Randomness**
+
+   * Have a single `set_seed(seed)` utility in `utils.py`.
+   * Call it at the start of every “experiment” function so runs can be replicated exactly.
+
+6. **Version Control & Environments**
+
+   * Check in `requirements.txt` or `environment.yml` and use Git tags/releases.
+   * Never commit large data files—keep raw/process directories separate.
+
+7. **Logging & Progress Reporting**
+
+   * Use Python’s `logging` module (not `print`) in long-running loops (e.g. replication runs).
+   * Log parameters, start/end times, and any early rejections of CMs.
+
+8. **Strict Input/Output Paths**
+
+   * All raw inputs live under `data/raw/`, all cleaned graphs in `data/processed/`.
+   * Results (CSVs, figures) go into `results/tables/` or `results/figures/`.
+   * Don’t let functions write arbitrarily outside those.
+
+9. **Maintain Notebook Purity**
+
+   * Notebooks in `notebooks/` should only orchestrate imports, function calls, and plots.
+   * No core logic—so if you need to tweak a calculation, it happens in `src/`, not inline.
+
+10. **Document Every Function**
+
+    * A one-sentence docstring plus notes on inputs, outputs, and side-effects.
+    * At module top include a short description of its role.
+
+11. **Automated Testing (Optional but Ideal)**
+
+    * Write small unit tests for critical routines (e.g. stub-pairing in `build_clustered_cm`).
+    * Use `pytest` so you can catch regressions when refactoring.
+
+12. **Batch Experiment Driver**
+
+    * A single `run_experiment(...)` in `analysis.py` that loops over regions, models, scales, seeds, attacks.
+    * It should read from your central config, call the right functions, and append results to a master DataFrame.
+
+13. **Intermediate Checks**
+
+    * After each major step (e.g. CM generation) assert key invariants:
+
+      ```python
+      assert nx.is_connected(G), "CM failed connectivity"
+      assert len(G) == expected_n, "Wrong node count"
+      ```
+    * Fail fast if something’s off.
+
+14. **Results Versioning**
+
+    * When you write out `results/tables/full_expt.csv`, include a timestamp or config hash so you can track which code produced which data.
+
+15. **Keep It DRY**
+
+    * If you see the same code in two places—factor it into a utility function.
+    * Avoid copy-paste; prefer parameterized loops and helper routines.
+
+16. **Sparcification Function**
+
+    * Sparcification function will come from "/Users/cosimoradler/Desktop/1/Semester\ 4/Modeling\ Real\ World\ Problmes/Spars\ Reduction\" No need to implent it in this code base directly at this point. 
+

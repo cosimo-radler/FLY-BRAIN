@@ -1,0 +1,74 @@
+2025-05-16 19:17:17,564 - fly_brain - INFO - Starting data fetch for 5 brain regions
+2025-05-16 19:17:17,564 - fly_brain - INFO - Using neuPrint server: https://neuprint.janelia.org
+2025-05-16 19:17:17,564 - fly_brain - INFO - Using dataset: hemibrain:v1.2.1
+2025-05-16 19:17:17,564 - fly_brain - INFO - Processing Ellipsoid Body (EB)
+2025-05-16 19:17:17,564 - fly_brain - INFO - Fetching neurons for EB
+2025-05-16 19:17:17,564 - fly_brain - INFO - Fetching neurons for region EB
+2025-05-16 19:17:18,155 - fly_brain - INFO - Found 10 neurons in region EB
+2025-05-16 19:17:18,156 - fly_brain - INFO - Saved 10 neurons to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/raw/eb_neurons.json
+2025-05-16 19:17:18,156 - fly_brain - INFO - Found 10 neurons with IDs for EB
+2025-05-16 19:17:18,156 - fly_brain - INFO - Fetching connectivity for EB neurons
+2025-05-16 19:17:18,156 - fly_brain - INFO - Fetching connectivity for 10 neurons in chunks of 50
+2025-05-16 19:17:18,808 - fly_brain - INFO - Retrieved 54 connections between neurons
+2025-05-16 19:17:18,813 - fly_brain - INFO - Saved 54 connections to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/raw/eb_connectivity.csv
+2025-05-16 19:17:18,813 - fly_brain - INFO - Building network for EB
+2025-05-16 19:17:18,815 - fly_brain - INFO - Built graph with 10 nodes and 54 edges
+2025-05-16 19:17:18,817 - fly_brain - INFO - Saved network to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/eb_network.gexf
+2025-05-16 19:17:18,818 - fly_brain - INFO - Successfully processed EB
+2025-05-16 19:17:18,818 - fly_brain - INFO - Processing Fan-shaped Body (FB)
+2025-05-16 19:17:18,818 - fly_brain - INFO - Fetching neurons for FB
+2025-05-16 19:17:18,818 - fly_brain - INFO - Fetching neurons for region FB
+2025-05-16 19:17:20,471 - fly_brain - INFO - Found 581 neurons in region FB
+2025-05-16 19:17:20,478 - fly_brain - INFO - Saved 581 neurons to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/raw/fb_neurons.json
+2025-05-16 19:17:20,479 - fly_brain - INFO - Found 581 neurons with IDs for FB
+2025-05-16 19:17:20,479 - fly_brain - INFO - Fetching connectivity for FB neurons
+2025-05-16 19:17:20,479 - fly_brain - INFO - Fetching connectivity for 581 neurons in chunks of 50
+2025-05-16 19:18:23,668 - fly_brain - INFO - Retrieved 22843 connections between neurons
+2025-05-16 19:18:23,713 - fly_brain - INFO - Saved 22843 connections to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/raw/fb_connectivity.csv
+2025-05-16 19:18:23,713 - fly_brain - INFO - Building network for FB
+2025-05-16 19:18:23,974 - fly_brain - INFO - Built graph with 581 nodes and 22843 edges
+2025-05-16 19:18:24,135 - fly_brain - INFO - Saved network to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/fb_network.gexf
+2025-05-16 19:18:24,136 - fly_brain - INFO - Successfully processed FB
+2025-05-16 19:18:24,136 - fly_brain - INFO - Processing Mushroom Body (MB)
+2025-05-16 19:18:24,136 - fly_brain - INFO - Fetching neurons for MB
+2025-05-16 19:18:24,136 - fly_brain - INFO - Fetching neurons for region MB
+2025-05-16 19:18:24,769 - fly_brain - INFO - Found 1927 neurons in region MB
+2025-05-16 19:18:24,773 - fly_brain - INFO - Saved 1927 neurons to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/raw/mb_neurons.json
+2025-05-16 19:18:24,773 - fly_brain - INFO - Found 1927 neurons with IDs for MB
+2025-05-16 19:18:24,773 - fly_brain - INFO - Fetching connectivity for MB neurons
+2025-05-16 19:18:24,773 - fly_brain - INFO - Fetching connectivity for 1927 neurons in chunks of 50
+2025-05-16 19:24:19,117 - fly_brain - INFO - Retrieved 67588 connections between neurons
+2025-05-16 19:24:19,234 - fly_brain - INFO - Saved 67588 connections to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/raw/mb_connectivity.csv
+2025-05-16 19:24:19,234 - fly_brain - INFO - Building network for MB
+2025-05-16 19:24:19,954 - fly_brain - INFO - Built graph with 1927 nodes and 67588 edges
+2025-05-16 19:24:20,493 - fly_brain - INFO - Saved network to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/mb_network.gexf
+2025-05-16 19:24:20,493 - fly_brain - INFO - Successfully processed MB
+2025-05-16 19:24:20,493 - fly_brain - INFO - Processing Lateral Horn (LH)
+2025-05-16 19:24:20,493 - fly_brain - INFO - Fetching neurons for LH
+2025-05-16 19:24:20,493 - fly_brain - INFO - Fetching neurons for region LH
+2025-05-16 19:24:21,345 - fly_brain - INFO - Found 1497 neurons in region LH
+2025-05-16 19:24:21,348 - fly_brain - INFO - Saved 1497 neurons to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/raw/lh_neurons.json
+2025-05-16 19:24:21,348 - fly_brain - INFO - Found 1497 neurons with IDs for LH
+2025-05-16 19:24:21,348 - fly_brain - INFO - Fetching connectivity for LH neurons
+2025-05-16 19:24:21,348 - fly_brain - INFO - Fetching connectivity for 1497 neurons in chunks of 50
+2025-05-16 19:28:07,568 - fly_brain - INFO - Retrieved 25160 connections between neurons
+2025-05-16 19:28:07,598 - fly_brain - INFO - Saved 25160 connections to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/raw/lh_connectivity.csv
+2025-05-16 19:28:07,598 - fly_brain - INFO - Building network for LH
+2025-05-16 19:28:07,868 - fly_brain - INFO - Built graph with 1492 nodes and 25160 edges
+2025-05-16 19:28:08,051 - fly_brain - INFO - Saved network to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/lh_network.gexf
+2025-05-16 19:28:08,051 - fly_brain - INFO - Successfully processed LH
+2025-05-16 19:28:08,052 - fly_brain - INFO - Processing Antennal Lobe (AL)
+2025-05-16 19:28:08,052 - fly_brain - INFO - Fetching neurons for AL
+2025-05-16 19:28:08,052 - fly_brain - INFO - Fetching neurons for region AL
+2025-05-16 19:28:08,685 - fly_brain - INFO - Found 552 neurons in region AL
+2025-05-16 19:28:08,686 - fly_brain - INFO - Saved 552 neurons to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/raw/al_neurons.json
+2025-05-16 19:28:08,686 - fly_brain - INFO - Found 552 neurons with IDs for AL
+2025-05-16 19:28:08,686 - fly_brain - INFO - Fetching connectivity for AL neurons
+2025-05-16 19:28:08,686 - fly_brain - INFO - Fetching connectivity for 552 neurons in chunks of 50
+2025-05-16 19:28:51,794 - fly_brain - INFO - Retrieved 9287 connections between neurons
+2025-05-16 19:28:51,808 - fly_brain - INFO - Saved 9287 connections to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/raw/al_connectivity.csv
+2025-05-16 19:28:51,808 - fly_brain - INFO - Building network for AL
+2025-05-16 19:28:51,910 - fly_brain - INFO - Built graph with 540 nodes and 9287 edges
+2025-05-16 19:28:51,986 - fly_brain - INFO - Saved network to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/al_network.gexf
+2025-05-16 19:28:51,987 - fly_brain - INFO - Successfully processed AL
+2025-05-16 19:28:51,987 - fly_brain - INFO - Completed processing 5/5 regions successfully

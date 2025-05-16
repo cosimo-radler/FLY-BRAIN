@@ -1,0 +1,18 @@
+2025-05-16 19:46:53,257 - fly_brain - INFO - Re-fetching data for Ellipsoid Body (EB) with improved query
+2025-05-16 19:46:53,258 - fly_brain - INFO - Fetching neurons for EB
+2025-05-16 19:46:53,258 - fly_brain - INFO - Fetching neurons for region EB
+2025-05-16 19:46:54,122 - fly_brain - INFO - Found 357 neurons in region EB
+2025-05-16 19:46:54,124 - fly_brain - INFO - Found 357 neurons in Ellipsoid Body
+2025-05-16 19:46:54,127 - fly_brain - INFO - Saved 357 neurons to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/raw/eb_neurons.json
+2025-05-16 19:46:54,127 - fly_brain - INFO - Saved neurons to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/raw/eb_neurons.json
+2025-05-16 19:46:54,127 - fly_brain - INFO - Found 357 neurons with IDs for EB
+2025-05-16 19:46:54,127 - fly_brain - INFO - Fetching connectivity for EB neurons
+2025-05-16 19:46:54,127 - fly_brain - INFO - Fetching connectivity for 357 neurons in chunks of 50
+2025-05-16 19:47:10,984 - fly_brain - INFO - Retrieved 34914 connections between neurons
+2025-05-16 19:47:11,033 - fly_brain - INFO - Saved 34914 connections to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/raw/eb_connectivity.csv
+2025-05-16 19:47:11,033 - fly_brain - INFO - Saved connectivity to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/raw/eb_connectivity.csv
+2025-05-16 19:47:11,033 - fly_brain - INFO - Building network for EB
+2025-05-16 19:47:11,397 - fly_brain - INFO - Built graph with 357 nodes and 34914 edges
+2025-05-16 19:47:11,641 - fly_brain - INFO - Saved network to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/eb_network.gexf
+2025-05-16 19:47:11,641 - fly_brain - INFO - Saved network to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/eb_network.gexf
+2025-05-16 19:47:11,641 - fly_brain - INFO - Successfully processed EB
