@@ -1,0 +1,26 @@
+2025-05-17 00:34:08,811 - fly_brain - INFO - Starting node percolation analysis
+2025-05-17 00:34:08,811 - fly_brain - INFO - Loading al network
+2025-05-17 00:34:08,845 - fly_brain - INFO - Loaded processed al network: 1041 nodes, 10945 edges
+2025-05-17 00:34:08,845 - fly_brain - INFO - Loaded al: 1041 nodes, 10945 edges
+2025-05-17 00:34:08,845 - fly_brain - INFO - Loading ammc network
+2025-05-17 00:34:08,845 - fly_brain - ERROR - Error loading region ammc: No processed network file found for region ammc: /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/ammc_cleaned.gexf
+2025-05-17 00:34:08,845 - fly_brain - INFO - Loading cal network
+2025-05-17 00:34:08,845 - fly_brain - ERROR - Error loading region cal: No processed network file found for region cal: /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/cal_cleaned.gexf
+2025-05-17 00:34:08,845 - fly_brain - INFO - Loading ccp network
+2025-05-17 00:34:08,845 - fly_brain - ERROR - Error loading region ccp: No processed network file found for region ccp: /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/ccp_cleaned.gexf
+2025-05-17 00:34:08,845 - fly_brain - INFO - Loading fb network
+2025-05-17 00:34:09,501 - fly_brain - INFO - Loaded processed fb network: 4366 nodes, 172671 edges
+2025-05-17 00:34:09,502 - fly_brain - INFO - Loaded fb: 4366 nodes, 172671 edges
+2025-05-17 00:34:09,502 - fly_brain - INFO - Loading fspp network
+2025-05-17 00:34:09,502 - fly_brain - ERROR - Error loading region fspp: No processed network file found for region fspp: /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/fspp_cleaned.gexf
+2025-05-17 00:34:09,502 - fly_brain - INFO - Running node percolation experiments
+2025-05-17 00:34:09,517 - fly_brain - INFO - Region al analytic percolation threshold: p_c = 0.0161
+2025-05-17 00:34:09,517 - fly_brain - INFO - Running node percolation experiments for al
+2025-05-17 00:34:09,861 - fly_brain - INFO - Region fb analytic percolation threshold: p_c = 0.0055
+2025-05-17 00:34:09,861 - fly_brain - INFO - Running node percolation experiments for fb
+2025-05-17 00:34:11,365 - fly_brain - INFO - Saving node percolation results and generating plots
+2025-05-17 00:34:12,579 - fly_brain - INFO - Analysis complete. Results saved to:
+2025-05-17 00:34:12,580 - fly_brain - INFO -   - csv: /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/tables/node_percolation_results_20250517_003411.csv
+2025-05-17 00:34:12,580 - fly_brain - INFO -   - thresholds: /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/tables/node_percolation_thresholds_20250517_003411.csv
+2025-05-17 00:34:12,580 - fly_brain - INFO -   - strategy_plot: /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/node_percolation_by_strategy_20250517_003411.png
+2025-05-17 00:34:12,580 - fly_brain - INFO -   - comprehensive_plot: /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/node_comprehensive_comparison_20250517_003411.png

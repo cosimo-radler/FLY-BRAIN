@@ -1,0 +1,251 @@
+{
+  "timestamp": "20250516_234049",
+  "total_time": 13.256556,
+  "unscaled_models": {
+    "EB": [
+      {
+        "seed": 42,
+        "nodes": 854,
+        "edges": 32435,
+        "time": 0.22780799865722656,
+        "status": "SUCCESS"
+      },
+      {
+        "seed": 123,
+        "nodes": 854,
+        "edges": 32437,
+        "time": 0.22704291343688965,
+        "status": "SUCCESS"
+      },
+      {
+        "seed": 456,
+        "nodes": 854,
+        "edges": 32453,
+        "time": 0.22857093811035156,
+        "status": "SUCCESS"
+      }
+    ],
+    "FB": [
+      {
+        "seed": 42,
+        "nodes": 4366,
+        "edges": 160888,
+        "time": 1.4388859272003174,
+        "status": "SUCCESS"
+      },
+      {
+        "seed": 123,
+        "nodes": 4366,
+        "edges": 160859,
+        "time": 1.513833999633789,
+        "status": "SUCCESS"
+      },
+      {
+        "seed": 456,
+        "nodes": 4366,
+        "edges": 160682,
+        "time": 1.488839864730835,
+        "status": "SUCCESS"
+      }
+    ],
+    "MB": [
+      {
+        "seed": 42,
+        "nodes": 598,
+        "edges": 11392,
+        "status": "SKIPPED"
+      },
+      {
+        "seed": 123,
+        "nodes": 598,
+        "edges": 11403,
+        "time": 0.06545877456665039,
+        "status": "SUCCESS"
+      },
+      {
+        "seed": 456,
+        "nodes": 598,
+        "edges": 11368,
+        "time": 0.08806300163269043,
+        "status": "SUCCESS"
+      }
+    ],
+    "LH": [
+      {
+        "seed": 42,
+        "nodes": 3712,
+        "edges": 95974,
+        "time": 0.7226438522338867,
+        "status": "SUCCESS"
+      },
+      {
+        "seed": 123,
+        "nodes": 3712,
+        "edges": 96002,
+        "time": 0.8831088542938232,
+        "status": "SUCCESS"
+      },
+      {
+        "seed": 456,
+        "nodes": 3712,
+        "edges": 96019,
+        "time": 0.6763172149658203,
+        "status": "SUCCESS"
+      }
+    ],
+    "AL": [
+      {
+        "seed": 42,
+        "nodes": 1041,
+        "edges": 9895,
+        "time": 0.08220911026000977,
+        "status": "SUCCESS"
+      },
+      {
+        "seed": 123,
+        "nodes": 1041,
+        "edges": 9918,
+        "time": 0.0784761905670166,
+        "status": "SUCCESS"
+      },
+      {
+        "seed": 456,
+        "nodes": 1041,
+        "edges": 9900,
+        "time": 0.05691695213317871,
+        "status": "SUCCESS"
+      }
+    ]
+  },
+  "scaled_models": {
+    "EB": [
+      {
+        "seed": 42,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 62241,
+        "time": 0.43146395683288574,
+        "status": "SUCCESS"
+      },
+      {
+        "seed": 123,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 61227,
+        "time": 0.4976499080657959,
+        "status": "SUCCESS"
+      },
+      {
+        "seed": 456,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 66778,
+        "time": 0.4593229293823242,
+        "status": "SUCCESS"
+      }
+    ],
+    "FB": [
+      {
+        "seed": 42,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 49361,
+        "time": 0.37543201446533203,
+        "status": "SUCCESS"
+      },
+      {
+        "seed": 123,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 47555,
+        "time": 0.4113130569458008,
+        "status": "SUCCESS"
+      },
+      {
+        "seed": 456,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 48085,
+        "time": 0.3638179302215576,
+        "status": "SUCCESS"
+      }
+    ],
+    "MB": [
+      {
+        "seed": 42,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 31160,
+        "status": "SKIPPED"
+      },
+      {
+        "seed": 123,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 30183,
+        "time": 0.20498394966125488,
+        "status": "SUCCESS"
+      },
+      {
+        "seed": 456,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 30409,
+        "time": 0.20580220222473145,
+        "status": "SUCCESS"
+      }
+    ],
+    "LH": [
+      {
+        "seed": 42,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 35983,
+        "time": 0.28124213218688965,
+        "status": "SUCCESS"
+      },
+      {
+        "seed": 123,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 37760,
+        "time": 0.2621278762817383,
+        "status": "SUCCESS"
+      },
+      {
+        "seed": 456,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 38274,
+        "time": 0.27780985832214355,
+        "status": "SUCCESS"
+      }
+    ],
+    "AL": [
+      {
+        "seed": 42,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 14685,
+        "time": 0.09890294075012207,
+        "status": "SUCCESS"
+      },
+      {
+        "seed": 123,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 14526,
+        "time": 0.0983891487121582,
+        "status": "SUCCESS"
+      },
+      {
+        "seed": 456,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 14822,
+        "time": 0.10052299499511719,
+        "status": "SUCCESS"
+      }
+    ]
+  }
+}

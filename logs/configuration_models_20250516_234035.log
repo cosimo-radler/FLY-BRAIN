@@ -1,0 +1,119 @@
+2025-05-16 23:40:35,994 - fly_brain - INFO - Starting configuration model generation
+2025-05-16 23:40:35,994 - fly_brain - INFO - Arguments: Namespace(regions=['EB', 'FB', 'MB', 'LH', 'AL'], seeds=[42, 123, 456], n_target=1500, force=False, no_connect=False)
+2025-05-16 23:40:35,995 - fly_brain - INFO - Generating configuration models for regions: EB, FB, MB, LH, AL
+2025-05-16 23:40:35,995 - fly_brain - INFO - Using seeds: [42, 123, 456]
+2025-05-16 23:40:35,995 - fly_brain - INFO - Scaled model target size: 1500 nodes
+2025-05-16 23:40:35,995 - fly_brain - INFO - Processing region: EB
+2025-05-16 23:40:36,150 - fly_brain - INFO - Loaded processed EB network: 854 nodes, 43854 edges
+2025-05-16 23:40:36,151 - fly_brain - INFO - Loaded EB network: 854 nodes, 43854 edges
+2025-05-16 23:40:36,151 - fly_brain - WARNING - No configuration model found for EB with the specified parameters
+2025-05-16 23:40:36,378 - fly_brain - INFO - Saved configuration model for EB to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/eb_configuration_seed42.gexf
+2025-05-16 23:40:36,378 - fly_brain - INFO - Generated unscaled model for EB (seed 42) in 0.23 seconds
+2025-05-16 23:40:36,379 - fly_brain - WARNING - No configuration model found for EB with the specified parameters
+2025-05-16 23:40:36,605 - fly_brain - INFO - Saved configuration model for EB to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/eb_configuration_seed123.gexf
+2025-05-16 23:40:36,606 - fly_brain - INFO - Generated unscaled model for EB (seed 123) in 0.23 seconds
+2025-05-16 23:40:36,606 - fly_brain - WARNING - No configuration model found for EB with the specified parameters
+2025-05-16 23:40:36,834 - fly_brain - INFO - Saved configuration model for EB to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/eb_configuration_seed456.gexf
+2025-05-16 23:40:36,834 - fly_brain - INFO - Generated unscaled model for EB (seed 456) in 0.23 seconds
+2025-05-16 23:40:36,834 - fly_brain - WARNING - No scaled_configuration model found for EB with the specified parameters
+2025-05-16 23:40:37,265 - fly_brain - INFO - Saved scaled_configuration model for EB to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/eb_scaled_configuration_n1500_seed42.gexf
+2025-05-16 23:40:37,266 - fly_brain - INFO - Generated scaled model for EB (seed 42) in 0.43 seconds
+2025-05-16 23:40:37,266 - fly_brain - WARNING - No scaled_configuration model found for EB with the specified parameters
+2025-05-16 23:40:37,470 - fly_brain - WARNING - Scaled model for EB (seed 123) is not connected, fixing
+2025-05-16 23:40:37,763 - fly_brain - INFO - Saved scaled_configuration model for EB to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/eb_scaled_configuration_n1500_seed123.gexf
+2025-05-16 23:40:37,764 - fly_brain - INFO - Generated scaled model for EB (seed 123) in 0.50 seconds
+2025-05-16 23:40:37,764 - fly_brain - WARNING - No scaled_configuration model found for EB with the specified parameters
+2025-05-16 23:40:38,222 - fly_brain - INFO - Saved scaled_configuration model for EB to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/eb_scaled_configuration_n1500_seed456.gexf
+2025-05-16 23:40:38,223 - fly_brain - INFO - Generated scaled model for EB (seed 456) in 0.46 seconds
+2025-05-16 23:40:38,223 - fly_brain - INFO - Processing region: FB
+2025-05-16 23:40:38,845 - fly_brain - INFO - Loaded processed FB network: 4366 nodes, 172671 edges
+2025-05-16 23:40:38,845 - fly_brain - INFO - Loaded FB network: 4366 nodes, 172671 edges
+2025-05-16 23:40:38,845 - fly_brain - WARNING - No configuration model found for FB with the specified parameters
+2025-05-16 23:40:39,469 - fly_brain - WARNING - Unscaled model for FB (seed 42) is not connected, fixing
+2025-05-16 23:40:40,283 - fly_brain - INFO - Saved configuration model for FB to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/fb_configuration_seed42.gexf
+2025-05-16 23:40:40,284 - fly_brain - INFO - Generated unscaled model for FB (seed 42) in 1.44 seconds
+2025-05-16 23:40:40,285 - fly_brain - WARNING - No configuration model found for FB with the specified parameters
+2025-05-16 23:40:40,956 - fly_brain - WARNING - Unscaled model for FB (seed 123) is not connected, fixing
+2025-05-16 23:40:41,797 - fly_brain - INFO - Saved configuration model for FB to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/fb_configuration_seed123.gexf
+2025-05-16 23:40:41,799 - fly_brain - INFO - Generated unscaled model for FB (seed 123) in 1.51 seconds
+2025-05-16 23:40:41,799 - fly_brain - WARNING - No configuration model found for FB with the specified parameters
+2025-05-16 23:40:42,424 - fly_brain - WARNING - Unscaled model for FB (seed 456) is not connected, fixing
+2025-05-16 23:40:43,286 - fly_brain - INFO - Saved configuration model for FB to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/fb_configuration_seed456.gexf
+2025-05-16 23:40:43,288 - fly_brain - INFO - Generated unscaled model for FB (seed 456) in 1.49 seconds
+2025-05-16 23:40:43,288 - fly_brain - WARNING - No scaled_configuration model found for FB with the specified parameters
+2025-05-16 23:40:43,663 - fly_brain - INFO - Saved scaled_configuration model for FB to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/fb_scaled_configuration_n1500_seed42.gexf
+2025-05-16 23:40:43,664 - fly_brain - INFO - Generated scaled model for FB (seed 42) in 0.38 seconds
+2025-05-16 23:40:43,664 - fly_brain - WARNING - No scaled_configuration model found for FB with the specified parameters
+2025-05-16 23:40:43,838 - fly_brain - WARNING - Scaled model for FB (seed 123) is not connected, fixing
+2025-05-16 23:40:44,075 - fly_brain - INFO - Saved scaled_configuration model for FB to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/fb_scaled_configuration_n1500_seed123.gexf
+2025-05-16 23:40:44,075 - fly_brain - INFO - Generated scaled model for FB (seed 123) in 0.41 seconds
+2025-05-16 23:40:44,076 - fly_brain - WARNING - No scaled_configuration model found for FB with the specified parameters
+2025-05-16 23:40:44,439 - fly_brain - INFO - Saved scaled_configuration model for FB to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/fb_scaled_configuration_n1500_seed456.gexf
+2025-05-16 23:40:44,439 - fly_brain - INFO - Generated scaled model for FB (seed 456) in 0.36 seconds
+2025-05-16 23:40:44,440 - fly_brain - INFO - Processing region: MB
+2025-05-16 23:40:44,479 - fly_brain - INFO - Loaded processed MB network: 598 nodes, 13171 edges
+2025-05-16 23:40:44,479 - fly_brain - INFO - Loaded MB network: 598 nodes, 13171 edges
+2025-05-16 23:40:44,558 - fly_brain - INFO - Loaded configuration model for MB: 598 nodes, 11392 edges
+2025-05-16 23:40:44,558 - fly_brain - INFO - Unscaled model for MB with seed 42 already exists, skipping
+2025-05-16 23:40:44,558 - fly_brain - WARNING - No configuration model found for MB with the specified parameters
+2025-05-16 23:40:44,623 - fly_brain - INFO - Saved configuration model for MB to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/mb_configuration_seed123.gexf
+2025-05-16 23:40:44,623 - fly_brain - INFO - Generated unscaled model for MB (seed 123) in 0.07 seconds
+2025-05-16 23:40:44,623 - fly_brain - WARNING - No configuration model found for MB with the specified parameters
+2025-05-16 23:40:44,711 - fly_brain - INFO - Saved configuration model for MB to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/mb_configuration_seed456.gexf
+2025-05-16 23:40:44,711 - fly_brain - INFO - Generated unscaled model for MB (seed 456) in 0.09 seconds
+2025-05-16 23:40:44,844 - fly_brain - INFO - Loaded scaled_configuration model for MB: 1500 nodes, 31160 edges
+2025-05-16 23:40:44,845 - fly_brain - INFO - Scaled model for MB with seed 42 already exists, skipping
+2025-05-16 23:40:44,845 - fly_brain - WARNING - No scaled_configuration model found for MB with the specified parameters
+2025-05-16 23:40:45,049 - fly_brain - INFO - Saved scaled_configuration model for MB to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/mb_scaled_configuration_n1500_seed123.gexf
+2025-05-16 23:40:45,050 - fly_brain - INFO - Generated scaled model for MB (seed 123) in 0.20 seconds
+2025-05-16 23:40:45,050 - fly_brain - WARNING - No scaled_configuration model found for MB with the specified parameters
+2025-05-16 23:40:45,255 - fly_brain - INFO - Saved scaled_configuration model for MB to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/mb_scaled_configuration_n1500_seed456.gexf
+2025-05-16 23:40:45,256 - fly_brain - INFO - Generated scaled model for MB (seed 456) in 0.21 seconds
+2025-05-16 23:40:45,256 - fly_brain - INFO - Processing region: LH
+2025-05-16 23:40:45,596 - fly_brain - INFO - Loaded processed LH network: 3712 nodes, 100567 edges
+2025-05-16 23:40:45,596 - fly_brain - INFO - Loaded LH network: 3712 nodes, 100567 edges
+2025-05-16 23:40:45,596 - fly_brain - WARNING - No configuration model found for LH with the specified parameters
+2025-05-16 23:40:46,317 - fly_brain - INFO - Saved configuration model for LH to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/lh_configuration_seed42.gexf
+2025-05-16 23:40:46,319 - fly_brain - INFO - Generated unscaled model for LH (seed 42) in 0.72 seconds
+2025-05-16 23:40:46,319 - fly_brain - WARNING - No configuration model found for LH with the specified parameters
+2025-05-16 23:40:46,713 - fly_brain - WARNING - Unscaled model for LH (seed 123) is not connected, fixing
+2025-05-16 23:40:47,201 - fly_brain - INFO - Saved configuration model for LH to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/lh_configuration_seed123.gexf
+2025-05-16 23:40:47,202 - fly_brain - INFO - Generated unscaled model for LH (seed 123) in 0.88 seconds
+2025-05-16 23:40:47,203 - fly_brain - WARNING - No configuration model found for LH with the specified parameters
+2025-05-16 23:40:47,877 - fly_brain - INFO - Saved configuration model for LH to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/lh_configuration_seed456.gexf
+2025-05-16 23:40:47,879 - fly_brain - INFO - Generated unscaled model for LH (seed 456) in 0.68 seconds
+2025-05-16 23:40:47,879 - fly_brain - WARNING - No scaled_configuration model found for LH with the specified parameters
+2025-05-16 23:40:48,160 - fly_brain - INFO - Saved scaled_configuration model for LH to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/lh_scaled_configuration_n1500_seed42.gexf
+2025-05-16 23:40:48,161 - fly_brain - INFO - Generated scaled model for LH (seed 42) in 0.28 seconds
+2025-05-16 23:40:48,161 - fly_brain - WARNING - No scaled_configuration model found for LH with the specified parameters
+2025-05-16 23:40:48,422 - fly_brain - INFO - Saved scaled_configuration model for LH to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/lh_scaled_configuration_n1500_seed123.gexf
+2025-05-16 23:40:48,423 - fly_brain - INFO - Generated scaled model for LH (seed 123) in 0.26 seconds
+2025-05-16 23:40:48,423 - fly_brain - WARNING - No scaled_configuration model found for LH with the specified parameters
+2025-05-16 23:40:48,700 - fly_brain - INFO - Saved scaled_configuration model for LH to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/lh_scaled_configuration_n1500_seed456.gexf
+2025-05-16 23:40:48,701 - fly_brain - INFO - Generated scaled model for LH (seed 456) in 0.28 seconds
+2025-05-16 23:40:48,701 - fly_brain - INFO - Processing region: AL
+2025-05-16 23:40:48,735 - fly_brain - INFO - Loaded processed AL network: 1041 nodes, 10945 edges
+2025-05-16 23:40:48,735 - fly_brain - INFO - Loaded AL network: 1041 nodes, 10945 edges
+2025-05-16 23:40:48,735 - fly_brain - WARNING - No configuration model found for AL with the specified parameters
+2025-05-16 23:40:48,816 - fly_brain - INFO - Saved configuration model for AL to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/al_configuration_seed42.gexf
+2025-05-16 23:40:48,817 - fly_brain - INFO - Generated unscaled model for AL (seed 42) in 0.08 seconds
+2025-05-16 23:40:48,817 - fly_brain - WARNING - No configuration model found for AL with the specified parameters
+2025-05-16 23:40:48,895 - fly_brain - INFO - Saved configuration model for AL to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/al_configuration_seed123.gexf
+2025-05-16 23:40:48,896 - fly_brain - INFO - Generated unscaled model for AL (seed 123) in 0.08 seconds
+2025-05-16 23:40:48,896 - fly_brain - WARNING - No configuration model found for AL with the specified parameters
+2025-05-16 23:40:48,952 - fly_brain - INFO - Saved configuration model for AL to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/al_configuration_seed456.gexf
+2025-05-16 23:40:48,953 - fly_brain - INFO - Generated unscaled model for AL (seed 456) in 0.06 seconds
+2025-05-16 23:40:48,953 - fly_brain - WARNING - No scaled_configuration model found for AL with the specified parameters
+2025-05-16 23:40:49,051 - fly_brain - INFO - Saved scaled_configuration model for AL to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/al_scaled_configuration_n1500_seed42.gexf
+2025-05-16 23:40:49,052 - fly_brain - INFO - Generated scaled model for AL (seed 42) in 0.10 seconds
+2025-05-16 23:40:49,052 - fly_brain - WARNING - No scaled_configuration model found for AL with the specified parameters
+2025-05-16 23:40:49,149 - fly_brain - INFO - Saved scaled_configuration model for AL to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/al_scaled_configuration_n1500_seed123.gexf
+2025-05-16 23:40:49,150 - fly_brain - INFO - Generated scaled model for AL (seed 123) in 0.10 seconds
+2025-05-16 23:40:49,150 - fly_brain - WARNING - No scaled_configuration model found for AL with the specified parameters
+2025-05-16 23:40:49,250 - fly_brain - INFO - Saved scaled_configuration model for AL to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/al_scaled_configuration_n1500_seed456.gexf
+2025-05-16 23:40:49,251 - fly_brain - INFO - Generated scaled model for AL (seed 456) in 0.10 seconds
+2025-05-16 23:40:49,251 - fly_brain - INFO - Total time: 13.26 seconds
+2025-05-16 23:40:49,254 - fly_brain - INFO - Unscaled models summary saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/tables/unscaled_cm_summary_20250516_234049.csv
+2025-05-16 23:40:49,255 - fly_brain - INFO - Scaled models summary saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/tables/scaled_cm_summary_20250516_234049.csv
+2025-05-16 23:40:49,255 - fly_brain - INFO - Detailed report saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/tables/configuration_models_report_20250516_234049.json
+2025-05-16 23:40:49,256 - fly_brain - INFO - Configuration model generation completed successfully

@@ -1,0 +1,26 @@
+{
+  "timestamp": "20250516_234031",
+  "total_time": 0.283186,
+  "unscaled_models": {
+    "MB": [
+      {
+        "seed": 42,
+        "nodes": 598,
+        "edges": 11392,
+        "status": "SKIPPED"
+      }
+    ]
+  },
+  "scaled_models": {
+    "MB": [
+      {
+        "seed": 42,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 31160,
+        "time": 0.1976768970489502,
+        "status": "SUCCESS"
+      }
+    ]
+  }
+}

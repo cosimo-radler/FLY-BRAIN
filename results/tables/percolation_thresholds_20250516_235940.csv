@@ -1,0 +1,26 @@
+Region,Original_Region,Region_Name,Region_Type,Seed,Percolation_Threshold
+EB,EB,Ellipsoid Body,Original,N/A,0.013973884870897013
+FB,FB,Fan-shaped Body,Original,N/A,0.015348703129504242
+MB,MB,Mushroom Body,Original,N/A,0.02754237288135593
+LH,LH,Lateral Horn,Original,N/A,0.02031145693117524
+AL,AL,Antennal Lobe,Original,N/A,0.06312151346107203
+EB_cm_42,EB,Ellipsoid Body,Unscaled CM,42,0.013164791120702945
+EB_cm_123,EB,Ellipsoid Body,Unscaled CM,123,0.013163979406233624
+FB_cm_42,FB,Fan-shaped Body,Unscaled CM,42,0.013568445129531101
+FB_cm_123,FB,Fan-shaped Body,Unscaled CM,123,0.013570891277454167
+MB_cm_42,MB,Mushroom Body,Unscaled CM,42,0.02624648876404494
+MB_cm_123,MB,Mushroom Body,Unscaled CM,123,0.02622116986757871
+LH_cm_42,LH,Lateral Horn,Unscaled CM,42,0.019338570862942047
+LH_cm_123,LH,Lateral Horn,Unscaled CM,123,0.019332930563946586
+AL_cm_42,AL,Antennal Lobe,Unscaled CM,42,0.05260232440626579
+AL_cm_123,AL,Antennal Lobe,Unscaled CM,123,0.05248033877797943
+EB_scaled_cm_42,EB,Ellipsoid Body,Scaled CM,42,0.012049934930351376
+EB_scaled_cm_123,EB,Ellipsoid Body,Scaled CM,123,0.012249497770591406
+FB_scaled_cm_42,FB,Fan-shaped Body,Scaled CM,42,0.015194181641376795
+FB_scaled_cm_123,FB,Fan-shaped Body,Scaled CM,123,0.015771212280517297
+MB_scaled_cm_42,MB,Mushroom Body,Scaled CM,42,0.024069319640564826
+MB_scaled_cm_123,MB,Mushroom Body,Scaled CM,123,0.024848424609879734
+LH_scaled_cm_42,LH,Lateral Horn,Scaled CM,42,0.02084317594419587
+LH_scaled_cm_123,LH,Lateral Horn,Scaled CM,123,0.019862288135593223
+AL_scaled_cm_42,AL,Antennal Lobe,Scaled CM,42,0.05107252298263534
+AL_scaled_cm_123,AL,Antennal Lobe,Scaled CM,123,0.05163155720776539

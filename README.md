@@ -8,7 +8,10 @@ The current implementation includes:
 - Fetching connectivity data for specific brain regions from the neuPrint API
 - Cleaning networks by removing self-loops and extracting largest connected components
 - Saving both raw and cleaned networks as GEXF files
+- Generating configuration models (both unscaled and scaled to target node count)
 - Computing various network metrics and statistics
+- Performing bond percolation analysis with different edge removal strategies
+- Comprehensive visualization comparing original networks with their null models
 
 ## Directory Structure
 
@@ -17,10 +20,13 @@ FLY BRAIN/
 ├── data/                         # All graph data files
 │   ├── raw/                      # └── Original downloads from API
 │   └── processed/                # └── Cleaned networks (self-loops removed, LCC extracted)
+│       └── null_models/          #     └── Configuration models (unscaled and scaled)
 │
 ├── notebooks/                    # Scripts and notebooks for data processing
 │   ├── 01_fetch_all_regions.py   # └── Download data for all regions from API
 │   ├── 02_clean_data.py          # └── Clean networks and extract largest components
+│   ├── 03_configuration_models.py # └── Generate configuration models
+│   ├── 04_percolate.py           # └── Perform bond percolation analysis
 │   └── archive/                  # └── Archive of older scripts
 │
 ├── src/                          # Python modules—core logic
@@ -28,6 +34,8 @@ FLY BRAIN/
 │   ├── data_io.py                # └── Functions to fetch, cache, and read/write graph files
 │   ├── metrics.py                # └── Compute network statistics (degree, clustering, path-length)
 │   ├── neuprint_client.py        # └── Interface to the neuPrint API
+│   ├── null_models.py            # └── Build plain & clustered CMs, enforce connectivity
+│   ├── percolation.py            # └── Simulate bond removal (random/targeted) and record Sₘₐₓ(p)
 │   ├── preprocessing.py          # └── LCC extraction, cleaning, normalization
 │   └── utils.py                  # └── Helper utilities, logging, randomization
 │
@@ -88,6 +96,72 @@ Add the `--force` flag to reprocess networks even if they already exist:
 python notebooks/02_clean_data.py --force
 ```
 
+### Configuration Models
+
+To generate configuration models for the cleaned networks:
+
+```
+python notebooks/03_configuration_models.py
+```
+
+This script will:
+1. Load the cleaned networks from `data/processed`
+2. Generate unscaled configuration models preserving the exact degree sequence
+3. Generate scaled configuration models with a target node count (default: 1500 nodes)
+4. Ensure connectedness of all models
+5. Save models to `data/processed/null_models/`
+6. Generate summary reports in `results/tables`
+
+Optional parameters:
+- `--regions`: List of brain regions to process (e.g., `EB FB MB`)
+- `--seeds`: List of random seeds for model generation (default: `42 123 456 789 101112`)
+- `--n-target`: Target node count for scaled models (default: 1500)
+- `--force`: Regenerate models even if they already exist
+- `--no-connect`: Skip ensuring models are connected
+
+Example:
+```
+python notebooks/03_configuration_models.py --regions EB MB --seeds 42 123 --n-target 1000
+```
+
+### Percolation Analysis
+
+To perform bond percolation analysis on the cleaned networks and configuration models:
+
+```
+python notebooks/04_percolate.py
+```
+
+This script will:
+1. Load the cleaned networks from `data/processed`
+2. Load configuration models from `data/processed/null_models/`
+3. Perform percolation with three different strategies:
+   - Random edge removal
+   - Targeted removal of high-degree nodes first
+   - Targeted removal of low-degree nodes first
+4. Generate comprehensive visualizations comparing all networks and models
+5. Save results to CSV in `results/tables`
+6. Save plots in `results/figures`
+
+Optional parameters:
+- `--regions`: List of brain regions to process (e.g., `EB FB MB`)
+- `--model-seeds`: List of configuration model seeds to analyze (default: `42 123`)
+- `--trials`: Number of trials for random percolation (default: 5)
+- `--steps`: Number of percolation steps (default: 20)
+- `--seed`: Random seed for reproducibility (default: 42)
+- `--original-only`: Only analyze original networks (not config models)
+- `--scaled-only`: Only analyze scaled configuration models
+- `--unscaled-only`: Only analyze unscaled configuration models
+
+Example:
+```
+python notebooks/04_percolate.py --regions EB FB MB LH AL --steps 20
+```
+
+This will generate two key visualizations:
+1. A comprehensive comparison plot showing all regions, attack strategies, and models side-by-side
+2. A percolation by strategy plot comparing the original networks across attack strategies
+
 ## Brain Regions
 
 The following brain regions are included:
@@ -99,10 +173,10 @@ The following brain regions are included:
 
 ## Next Steps
 
-1. Calculate network metrics and statistics
-2. Apply sparsification and null model techniques
+1. Implement additional network metrics and statistics
+2. Apply spectral sparsification techniques
 3. Compare structural properties across brain regions
-4. Perform percolation simulations
+4. Implement additional percolation strategies
 5. Import the GEXF files into visualization tools like Gephi
 
 ## Dependencies
@@ -112,4 +186,6 @@ The following brain regions are included:
 - pandas
 - numpy
 - matplotlib
+- seaborn
+- tqdm
 - jupyter 

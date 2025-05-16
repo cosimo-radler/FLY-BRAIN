@@ -1,0 +1,16 @@
+Region,Original_Region,Region_Name,Region_Type,Seed,Percolation_Threshold
+EB,EB,Ellipsoid Body,Original,N/A,0.013973884870897013
+FB,FB,Fan-shaped Body,Original,N/A,0.015348703129504242
+MB,MB,Mushroom Body,Original,N/A,0.02754237288135593
+EB_cm_42,EB,Ellipsoid Body,Unscaled CM,42,0.013164791120702945
+EB_cm_123,EB,Ellipsoid Body,Unscaled CM,123,0.013163979406233624
+FB_cm_42,FB,Fan-shaped Body,Unscaled CM,42,0.013568445129531101
+FB_cm_123,FB,Fan-shaped Body,Unscaled CM,123,0.013570891277454167
+MB_cm_42,MB,Mushroom Body,Unscaled CM,42,0.02624648876404494
+MB_cm_123,MB,Mushroom Body,Unscaled CM,123,0.02622116986757871
+EB_scaled_cm_42,EB,Ellipsoid Body,Scaled CM,42,0.012049934930351376
+EB_scaled_cm_123,EB,Ellipsoid Body,Scaled CM,123,0.012249497770591406
+FB_scaled_cm_42,FB,Fan-shaped Body,Scaled CM,42,0.015194181641376795
+FB_scaled_cm_123,FB,Fan-shaped Body,Scaled CM,123,0.015771212280517297
+MB_scaled_cm_42,MB,Mushroom Body,Scaled CM,42,0.024069319640564826
+MB_scaled_cm_123,MB,Mushroom Body,Scaled CM,123,0.024848424609879734

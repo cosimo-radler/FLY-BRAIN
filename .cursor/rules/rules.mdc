@@ -27,7 +27,7 @@ your_project/                      # Root of the analysis pipeline
 ├── notebooks/                    # Jupyter notebooks for orchestration & exploration
 │   ├── 01_ingest.ipynb           # └── Download and load raw data into processed/
 │   ├── 02_describe.ipynb         # └── Compute & visualize descriptive metrics of originals
-│   ├── 03_nulls.ipynb            # └── Generate configuration models & sparsifiers, verify stats
+│   ├── 03_Configuration Models.ipynb      # └── Generate configuration models & sparsifiers, verify stats
 │   ├── 04_percolate.ipynb        # └── Run bond‐percolation simulations across models
 │   └── 05_summary.ipynb          #     └── Aggregate results, produce final figures & tables
 │

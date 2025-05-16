@@ -1,0 +1,292 @@
+{
+  "MB": {
+    "models": [
+      {
+        "model_type": "configuration",
+        "seed": 42,
+        "n_target": null,
+        "nodes": 598,
+        "edges": 11392,
+        "timestamp": "2025-05-16T23:39:36.073073",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/mb_configuration_seed42.gexf"
+      },
+      {
+        "model_type": "scaled_configuration",
+        "seed": 42,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 31160,
+        "timestamp": "2025-05-16T23:40:31.424291",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/mb_scaled_configuration_n1500_seed42.gexf"
+      },
+      {
+        "model_type": "configuration",
+        "seed": 123,
+        "n_target": null,
+        "nodes": 598,
+        "edges": 11403,
+        "timestamp": "2025-05-16T23:40:44.623448",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/mb_configuration_seed123.gexf"
+      },
+      {
+        "model_type": "configuration",
+        "seed": 456,
+        "n_target": null,
+        "nodes": 598,
+        "edges": 11368,
+        "timestamp": "2025-05-16T23:40:44.711620",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/mb_configuration_seed456.gexf"
+      },
+      {
+        "model_type": "scaled_configuration",
+        "seed": 123,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 30183,
+        "timestamp": "2025-05-16T23:40:45.049855",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/mb_scaled_configuration_n1500_seed123.gexf"
+      },
+      {
+        "model_type": "scaled_configuration",
+        "seed": 456,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 30409,
+        "timestamp": "2025-05-16T23:40:45.255818",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/mb_scaled_configuration_n1500_seed456.gexf"
+      }
+    ]
+  },
+  "EB": {
+    "models": [
+      {
+        "model_type": "configuration",
+        "seed": 42,
+        "n_target": null,
+        "nodes": 854,
+        "edges": 32435,
+        "timestamp": "2025-05-16T23:40:36.378653",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/eb_configuration_seed42.gexf"
+      },
+      {
+        "model_type": "configuration",
+        "seed": 123,
+        "n_target": null,
+        "nodes": 854,
+        "edges": 32437,
+        "timestamp": "2025-05-16T23:40:36.605762",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/eb_configuration_seed123.gexf"
+      },
+      {
+        "model_type": "configuration",
+        "seed": 456,
+        "n_target": null,
+        "nodes": 854,
+        "edges": 32453,
+        "timestamp": "2025-05-16T23:40:36.834516",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/eb_configuration_seed456.gexf"
+      },
+      {
+        "model_type": "scaled_configuration",
+        "seed": 42,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 62241,
+        "timestamp": "2025-05-16T23:40:37.266110",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/eb_scaled_configuration_n1500_seed42.gexf"
+      },
+      {
+        "model_type": "scaled_configuration",
+        "seed": 123,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 61227,
+        "timestamp": "2025-05-16T23:40:37.763914",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/eb_scaled_configuration_n1500_seed123.gexf"
+      },
+      {
+        "model_type": "scaled_configuration",
+        "seed": 456,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 66778,
+        "timestamp": "2025-05-16T23:40:38.223429",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/eb_scaled_configuration_n1500_seed456.gexf"
+      }
+    ]
+  },
+  "FB": {
+    "models": [
+      {
+        "model_type": "configuration",
+        "seed": 42,
+        "n_target": null,
+        "nodes": 4366,
+        "edges": 160888,
+        "timestamp": "2025-05-16T23:40:40.284484",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/fb_configuration_seed42.gexf"
+      },
+      {
+        "model_type": "configuration",
+        "seed": 123,
+        "n_target": null,
+        "nodes": 4366,
+        "edges": 160859,
+        "timestamp": "2025-05-16T23:40:41.798806",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/fb_configuration_seed123.gexf"
+      },
+      {
+        "model_type": "configuration",
+        "seed": 456,
+        "n_target": null,
+        "nodes": 4366,
+        "edges": 160682,
+        "timestamp": "2025-05-16T23:40:43.287958",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/fb_configuration_seed456.gexf"
+      },
+      {
+        "model_type": "scaled_configuration",
+        "seed": 42,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 49361,
+        "timestamp": "2025-05-16T23:40:43.663925",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/fb_scaled_configuration_n1500_seed42.gexf"
+      },
+      {
+        "model_type": "scaled_configuration",
+        "seed": 123,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 47555,
+        "timestamp": "2025-05-16T23:40:44.075512",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/fb_scaled_configuration_n1500_seed123.gexf"
+      },
+      {
+        "model_type": "scaled_configuration",
+        "seed": 456,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 48085,
+        "timestamp": "2025-05-16T23:40:44.439517",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/fb_scaled_configuration_n1500_seed456.gexf"
+      }
+    ]
+  },
+  "LH": {
+    "models": [
+      {
+        "model_type": "configuration",
+        "seed": 42,
+        "n_target": null,
+        "nodes": 3712,
+        "edges": 95974,
+        "timestamp": "2025-05-16T23:40:46.318950",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/lh_configuration_seed42.gexf"
+      },
+      {
+        "model_type": "configuration",
+        "seed": 123,
+        "n_target": null,
+        "nodes": 3712,
+        "edges": 96002,
+        "timestamp": "2025-05-16T23:40:47.202404",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/lh_configuration_seed123.gexf"
+      },
+      {
+        "model_type": "configuration",
+        "seed": 456,
+        "n_target": null,
+        "nodes": 3712,
+        "edges": 96019,
+        "timestamp": "2025-05-16T23:40:47.879066",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/lh_configuration_seed456.gexf"
+      },
+      {
+        "model_type": "scaled_configuration",
+        "seed": 42,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 35983,
+        "timestamp": "2025-05-16T23:40:48.160683",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/lh_scaled_configuration_n1500_seed42.gexf"
+      },
+      {
+        "model_type": "scaled_configuration",
+        "seed": 123,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 37760,
+        "timestamp": "2025-05-16T23:40:48.422979",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/lh_scaled_configuration_n1500_seed123.gexf"
+      },
+      {
+        "model_type": "scaled_configuration",
+        "seed": 456,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 38274,
+        "timestamp": "2025-05-16T23:40:48.700900",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/lh_scaled_configuration_n1500_seed456.gexf"
+      }
+    ]
+  },
+  "AL": {
+    "models": [
+      {
+        "model_type": "configuration",
+        "seed": 42,
+        "n_target": null,
+        "nodes": 1041,
+        "edges": 9895,
+        "timestamp": "2025-05-16T23:40:48.817108",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/al_configuration_seed42.gexf"
+      },
+      {
+        "model_type": "configuration",
+        "seed": 123,
+        "n_target": null,
+        "nodes": 1041,
+        "edges": 9918,
+        "timestamp": "2025-05-16T23:40:48.895667",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/al_configuration_seed123.gexf"
+      },
+      {
+        "model_type": "configuration",
+        "seed": 456,
+        "n_target": null,
+        "nodes": 1041,
+        "edges": 9900,
+        "timestamp": "2025-05-16T23:40:48.952752",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/al_configuration_seed456.gexf"
+      },
+      {
+        "model_type": "scaled_configuration",
+        "seed": 42,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 14685,
+        "timestamp": "2025-05-16T23:40:49.051732",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/al_scaled_configuration_n1500_seed42.gexf"
+      },
+      {
+        "model_type": "scaled_configuration",
+        "seed": 123,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 14526,
+        "timestamp": "2025-05-16T23:40:49.150308",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/al_scaled_configuration_n1500_seed123.gexf"
+      },
+      {
+        "model_type": "scaled_configuration",
+        "seed": 456,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 14822,
+        "timestamp": "2025-05-16T23:40:49.250992",
+        "file_path": "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/al_scaled_configuration_n1500_seed456.gexf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "timestamp": "20250516_234920",
+  "total_time": 0.519857,
+  "unscaled_models": {
+    "EB": [
+      {
+        "seed": 42,
+        "nodes": 854,
+        "edges": 32435,
+        "status": "SKIPPED"
+      }
+    ]
+  },
+  "scaled_models": {
+    "EB": [
+      {
+        "seed": 42,
+        "n_target": 1500,
+        "nodes": 1500,
+        "edges": 62241,
+        "status": "SKIPPED"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+Region,Original_Region,Region_Name,Region_Type,Seed,Percolation_Threshold
+EB,EB,Ellipsoid Body,Original,N/A,0.013973884870897013
+EB_cm_42,EB,Ellipsoid Body,Unscaled CM,42,0.013164791120702945
+EB_scaled_cm_42,EB,Ellipsoid Body,Scaled CM,42,0.012049934930351376
