@@ -16,6 +16,7 @@ Here are some high-level “ground rules” to keep your codebase clean, reprodu
    * notebooks/ only for orchestration & plots—no core logic.
    * src/ only for importable modules; no top-level scripts here.
    * results/ only for output tables or figures.
+   * generally ignore the files that are in the archieve, unless speciefied. 
 
 
 your_project/                      # Root of the analysis pipeline
