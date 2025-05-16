@@ -1,0 +1,6 @@
+Region,Region_Name,Nodes_Before,Nodes_After,Edges_Before,Edges_After,Processing_Time,Status,Error
+EB,Ellipsoid Body,0,0,0,0,0,ERROR,Raw network file not found
+FB,Fan-shaped Body,0,0,0,0,0,ERROR,Raw network file not found
+MB,Mushroom Body,0,0,0,0,0,ERROR,Raw network file not found
+LH,Lateral Horn,0,0,0,0,0,ERROR,Raw network file not found
+AL,Antennal Lobe,0,0,0,0,0,ERROR,Raw network file not found

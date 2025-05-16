@@ -1,0 +1,31 @@
+{
+  "timestamp": "20250516_213204",
+  "total_time": 0.000325,
+  "total_nodes_before": 0,
+  "total_nodes_after": 0,
+  "total_edges_before": 0,
+  "total_edges_after": 0,
+  "region_times": {},
+  "results": {
+    "EB": {
+      "error": "Raw network file not found",
+      "status": "ERROR"
+    },
+    "FB": {
+      "error": "Raw network file not found",
+      "status": "ERROR"
+    },
+    "MB": {
+      "error": "Raw network file not found",
+      "status": "ERROR"
+    },
+    "LH": {
+      "error": "Raw network file not found",
+      "status": "ERROR"
+    },
+    "AL": {
+      "error": "Raw network file not found",
+      "status": "ERROR"
+    }
+  }
+}

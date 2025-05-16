@@ -1,0 +1,57 @@
+{
+  "timestamp": "20250516_213305",
+  "total_time": 3.38832,
+  "total_nodes_before": 13282,
+  "total_nodes_after": 10571,
+  "total_edges_before": 341230,
+  "total_edges_after": 341208,
+  "region_times": {
+    "EB": 0.3660297393798828,
+    "FB": 1.6509740352630615,
+    "MB": 0.15883612632751465,
+    "LH": 1.0672059059143066,
+    "AL": 0.1384270191192627
+  },
+  "results": {
+    "EB": {
+      "nodes_before": 1062,
+      "edges_before": 43855,
+      "nodes_after": 854,
+      "edges_after": 43854,
+      "processing_time": 0.3660297393798828,
+      "status": "SUCCESS"
+    },
+    "FB": {
+      "nodes_before": 6019,
+      "edges_before": 172672,
+      "nodes_after": 4366,
+      "edges_after": 172671,
+      "processing_time": 1.6509740352630615,
+      "status": "SUCCESS"
+    },
+    "MB": {
+      "nodes_before": 603,
+      "edges_before": 13191,
+      "nodes_after": 598,
+      "edges_after": 13171,
+      "processing_time": 0.15883612632751465,
+      "status": "SUCCESS"
+    },
+    "LH": {
+      "nodes_before": 4499,
+      "edges_before": 100567,
+      "nodes_after": 3712,
+      "edges_after": 100567,
+      "processing_time": 1.0672059059143066,
+      "status": "SUCCESS"
+    },
+    "AL": {
+      "nodes_before": 1099,
+      "edges_before": 10945,
+      "nodes_after": 1041,
+      "edges_after": 10945,
+      "processing_time": 0.1384270191192627,
+      "status": "SUCCESS"
+    }
+  }
+}

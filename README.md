@@ -4,7 +4,11 @@ This repository contains code for fetching, processing, and analyzing Drosophila
 
 ## Current Project State
 
-The current implementation focuses on fetching connectivity data for specific brain regions from the neuPrint API and saving them as GEXF files for visualization and further analysis.
+The current implementation includes:
+- Fetching connectivity data for specific brain regions from the neuPrint API
+- Cleaning networks by removing self-loops and extracting largest connected components
+- Saving both raw and cleaned networks as GEXF files
+- Computing various network metrics and statistics
 
 ## Directory Structure
 
@@ -12,22 +16,25 @@ The current implementation focuses on fetching connectivity data for specific br
 FLY BRAIN/
 ├── data/                         # All graph data files
 │   ├── raw/                      # └── Original downloads from API
-│   └── processed/                # └── Processed GEXF files
+│   └── processed/                # └── Cleaned networks (self-loops removed, LCC extracted)
 │
-├── notebooks/                    # Jupyter notebooks
-│   └── 01_ingest.ipynb           # └── Download and save data as GEXF
+├── notebooks/                    # Scripts and notebooks for data processing
+│   ├── 01_fetch_all_regions.py   # └── Download data for all regions from API
+│   ├── 02_clean_data.py          # └── Clean networks and extract largest components
+│   └── archive/                  # └── Archive of older scripts
 │
-├── src/                          # Python modules
-│   ├── config.py                 # └── Configuration settings
-│   ├── data_io.py                # └── Functions to fetch and save data
-│   └── utils.py                  # └── Helper utilities
+├── src/                          # Python modules—core logic
+│   ├── config.py                 # └── Configuration settings and parameters
+│   ├── data_io.py                # └── Functions to fetch, cache, and read/write graph files
+│   ├── metrics.py                # └── Compute network statistics (degree, clustering, path-length)
+│   ├── neuprint_client.py        # └── Interface to the neuPrint API
+│   ├── preprocessing.py          # └── LCC extraction, cleaning, normalization
+│   └── utils.py                  # └── Helper utilities, logging, randomization
 │
 ├── results/                      # Outputs from analyses
-│   ├── figures/                  # └── Future plots
-│   └── tables/                   # └── Future tables
+│   ├── figures/                  # └── Plots and visualizations
+│   └── tables/                   # └── Summary statistics and reports
 │
-├── convert_to_gexf.py            # Script to fetch and save all regions as GEXF
-├── test_api_connection.py        # Script to test neuPrint API connection
 ├── requirements.txt              # pip-installable dependencies
 └── README.md                     # This file
 ```
@@ -39,29 +46,47 @@ FLY BRAIN/
    pip install -r requirements.txt
    ```
 
-2. Test API connection:
-   ```
-   python test_api_connection.py
-   ```
+2. Set up your neuPrint API credentials (required for data fetching)
 
 ## Usage
 
-### Using the Script
+### Data Fetching
 
-To fetch data for all brain regions and save as GEXF files:
+To fetch data for all brain regions:
 
 ```
-python convert_to_gexf.py
+python notebooks/01_fetch_all_regions.py
 ```
 
-### Using the Notebook
-
-Open and run `notebooks/01_ingest.ipynb` to:
+This script will:
 1. Connect to the neuPrint API
 2. Fetch neurons for each brain region
 3. Fetch connectivity data
 4. Create NetworkX graphs
-5. Save graphs as GEXF files
+5. Save raw graphs as GEXF files in the `data/raw` directory
+6. Create adjacency matrices in CSV format
+7. Save performance reports in the `results/tables` directory
+
+### Data Cleaning
+
+To clean the fetched networks:
+
+```
+python notebooks/02_clean_data.py
+```
+
+This script will:
+1. Load the raw networks from `data/raw`
+2. Remove self-loops
+3. Extract the largest connected component
+4. Save the cleaned networks to the `data/processed` directory
+5. Generate cleaning reports in the `results/tables` directory
+
+Add the `--force` flag to reprocess networks even if they already exist:
+
+```
+python notebooks/02_clean_data.py --force
+```
 
 ## Brain Regions
 
@@ -74,13 +99,17 @@ The following brain regions are included:
 
 ## Next Steps
 
-1. Import the GEXF files into visualization tools like Gephi
-2. Apply network analysis and sparsification techniques
-3. Develop additional notebooks for deeper analysis
+1. Calculate network metrics and statistics
+2. Apply sparsification and null model techniques
+3. Compare structural properties across brain regions
+4. Perform percolation simulations
+5. Import the GEXF files into visualization tools like Gephi
 
 ## Dependencies
 
 - neuprint-python
 - networkx
 - pandas
+- numpy
+- matplotlib
 - jupyter 
