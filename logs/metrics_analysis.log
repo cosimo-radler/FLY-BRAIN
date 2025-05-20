@@ -1,0 +1,183 @@
+2025-05-17 19:19:33,618 - metrics_analysis - INFO - Starting network metrics analysis
+2025-05-17 19:19:33,619 - metrics_analysis - INFO - Found 6 brain regions: ['AL', 'EB', 'FB', 'LH', 'MB', 'TEST_REGION']
+2025-05-17 19:19:33,619 - metrics_analysis - INFO - Analyzing brain region: AL
+2025-05-17 19:19:33,619 - metrics_analysis - INFO - Available models for AL: []
+2025-05-17 19:19:33,620 - metrics_analysis - WARNING - No metrics computed for region AL
+2025-05-17 19:19:33,620 - metrics_analysis - INFO - Analyzing brain region: EB
+2025-05-17 19:19:33,620 - metrics_analysis - INFO - Available models for EB: []
+2025-05-17 19:19:33,620 - metrics_analysis - WARNING - No metrics computed for region EB
+2025-05-17 19:19:33,620 - metrics_analysis - INFO - Analyzing brain region: FB
+2025-05-17 19:19:33,620 - metrics_analysis - INFO - Available models for FB: []
+2025-05-17 19:19:33,620 - metrics_analysis - WARNING - No metrics computed for region FB
+2025-05-17 19:19:33,620 - metrics_analysis - INFO - Analyzing brain region: LH
+2025-05-17 19:19:33,620 - metrics_analysis - INFO - Available models for LH: []
+2025-05-17 19:19:33,620 - metrics_analysis - WARNING - No metrics computed for region LH
+2025-05-17 19:19:33,620 - metrics_analysis - INFO - Analyzing brain region: MB
+2025-05-17 19:19:33,620 - metrics_analysis - INFO - Available models for MB: []
+2025-05-17 19:19:33,620 - metrics_analysis - WARNING - No metrics computed for region MB
+2025-05-17 19:19:33,620 - metrics_analysis - INFO - Analyzing brain region: TEST_REGION
+2025-05-17 19:19:33,621 - metrics_analysis - INFO - Available models for TEST_REGION: []
+2025-05-17 19:19:33,621 - metrics_analysis - WARNING - No metrics computed for region TEST_REGION
+2025-05-17 19:19:33,621 - metrics_analysis - WARNING - No metrics computed for any region
+2025-05-17 19:20:22,289 - metrics_analysis - INFO - Starting network metrics analysis
+2025-05-17 19:20:22,290 - metrics_analysis - INFO - Found 6 brain regions: ['AL', 'EB', 'FB', 'LH', 'MB', 'TEST_REGION']
+2025-05-17 19:20:22,290 - metrics_analysis - INFO - Analyzing brain region: AL
+2025-05-17 19:20:22,290 - fly_brain - INFO - Found original model for al at /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/al_cleaned.gexf
+2025-05-17 19:20:22,290 - fly_brain - INFO - Found configuration models for al in null_models directory
+2025-05-17 19:20:22,291 - metrics_analysis - INFO - Available models for AL: ['configuration_model', 'original']
+2025-05-17 19:20:22,291 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/al_cleaned.gexf
+2025-05-17 19:20:22,346 - fly_brain - INFO - Successfully loaded graph with 1041 nodes and 10945 edges
+2025-05-17 19:20:22,346 - metrics_analysis - INFO - Computing metrics for AL original graph
+2025-05-17 19:20:48,773 - metrics_analysis - INFO - Starting network metrics analysis
+2025-05-17 19:20:48,773 - metrics_analysis - INFO - Found 6 brain regions: ['AL', 'EB', 'FB', 'LH', 'MB', 'TEST_REGION']
+2025-05-17 19:20:48,773 - metrics_analysis - INFO - Analyzing brain region: AL
+2025-05-17 19:20:48,773 - fly_brain - INFO - Found original model for al at /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/al_cleaned.gexf
+2025-05-17 19:20:48,774 - fly_brain - INFO - Found configuration models for al in null_models directory
+2025-05-17 19:20:48,774 - metrics_analysis - INFO - Available models for AL: ['configuration_model', 'original']
+2025-05-17 19:20:48,774 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/al_cleaned.gexf
+2025-05-17 19:20:48,840 - fly_brain - INFO - Successfully loaded graph with 1041 nodes and 10945 edges
+2025-05-17 19:20:48,840 - metrics_analysis - INFO - Computing metrics for AL original graph
+2025-05-17 19:20:48,840 - src.metrics - INFO - Converting directed graph with 1041 nodes to undirected for metrics calculation
+2025-05-17 19:20:58,970 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/al_configuration_seed456.gexf
+2025-05-17 19:20:59,035 - fly_brain - INFO - Successfully loaded graph with 1041 nodes and 9900 edges
+2025-05-17 19:20:59,035 - metrics_analysis - INFO - Computing metrics for AL configuration model #1
+2025-05-17 19:21:22,761 - fly_brain - INFO - Saved metrics to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/tables/AL_metrics_20250517_192048.csv
+2025-05-17 19:21:22,761 - metrics_analysis - INFO - Analyzing brain region: EB
+2025-05-17 19:21:22,761 - fly_brain - INFO - Found original model for eb at /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/eb_cleaned.gexf
+2025-05-17 19:21:22,761 - fly_brain - INFO - Found configuration models for eb in null_models directory
+2025-05-17 19:21:22,761 - metrics_analysis - INFO - Available models for EB: ['configuration_model', 'original']
+2025-05-17 19:21:22,761 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/eb_cleaned.gexf
+2025-05-17 19:21:22,929 - fly_brain - INFO - Successfully loaded graph with 854 nodes and 43854 edges
+2025-05-17 19:21:22,929 - metrics_analysis - INFO - Computing metrics for EB original graph
+2025-05-17 19:21:22,929 - src.metrics - INFO - Converting directed graph with 854 nodes to undirected for metrics calculation
+2025-05-17 19:22:01,683 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/eb_configuration_seed456.gexf
+2025-05-17 19:22:01,865 - fly_brain - INFO - Successfully loaded graph with 854 nodes and 32453 edges
+2025-05-17 19:22:01,865 - metrics_analysis - INFO - Computing metrics for EB configuration model #1
+2025-05-17 19:22:36,936 - fly_brain - INFO - Saved metrics to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/tables/EB_metrics_20250517_192048.csv
+2025-05-17 19:22:36,936 - metrics_analysis - INFO - Analyzing brain region: FB
+2025-05-17 19:22:36,937 - fly_brain - INFO - Found original model for fb at /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/fb_cleaned.gexf
+2025-05-17 19:22:36,937 - fly_brain - INFO - Found configuration models for fb in null_models directory
+2025-05-17 19:22:36,937 - metrics_analysis - INFO - Available models for FB: ['configuration_model', 'original']
+2025-05-17 19:22:36,937 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/fb_cleaned.gexf
+2025-05-17 19:22:37,739 - fly_brain - INFO - Successfully loaded graph with 4366 nodes and 172671 edges
+2025-05-17 19:22:37,739 - metrics_analysis - INFO - Computing metrics for FB original graph
+2025-05-17 19:22:37,739 - src.metrics - INFO - Converting directed graph with 4366 nodes to undirected for metrics calculation
+2025-05-17 19:26:11,556 - metrics_analysis - INFO - Starting network metrics analysis
+2025-05-17 19:26:11,556 - metrics_analysis - INFO - Found 6 brain regions: ['AL', 'EB', 'FB', 'LH', 'MB', 'TEST_REGION']
+2025-05-17 19:26:11,556 - metrics_analysis - INFO - Using 14 CPU cores for parallel processing
+2025-05-17 19:26:13,185 - metrics_analysis - INFO - Analyzing brain region: AL
+2025-05-17 19:26:13,185 - fly_brain - INFO - Found original model for al at /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/al_cleaned.gexf
+2025-05-17 19:26:13,185 - fly_brain - INFO - Found configuration models for al in null_models directory
+2025-05-17 19:26:13,185 - metrics_analysis - INFO - Available models for AL: ['configuration_model', 'original']
+2025-05-17 19:26:13,185 - metrics_analysis - INFO - Processing original model for AL
+2025-05-17 19:26:13,185 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/al_cleaned.gexf
+2025-05-17 19:26:13,190 - metrics_analysis - INFO - Analyzing brain region: EB
+2025-05-17 19:26:13,190 - fly_brain - INFO - Found original model for eb at /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/eb_cleaned.gexf
+2025-05-17 19:26:13,195 - fly_brain - INFO - Found configuration models for eb in null_models directory
+2025-05-17 19:26:13,195 - metrics_analysis - INFO - Available models for EB: ['configuration_model', 'original']
+2025-05-17 19:26:13,195 - metrics_analysis - INFO - Processing original model for EB
+2025-05-17 19:26:13,195 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/eb_cleaned.gexf
+2025-05-17 19:26:13,226 - metrics_analysis - INFO - Analyzing brain region: FB
+2025-05-17 19:26:13,227 - fly_brain - INFO - Found original model for fb at /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/fb_cleaned.gexf
+2025-05-17 19:26:13,381 - metrics_analysis - INFO - Analyzing brain region: LH
+2025-05-17 19:26:13,381 - fly_brain - INFO - Found original model for lh at /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/lh_cleaned.gexf
+2025-05-17 19:26:13,381 - fly_brain - INFO - Found configuration models for lh in null_models directory
+2025-05-17 19:26:13,381 - metrics_analysis - INFO - Available models for LH: ['configuration_model', 'original']
+2025-05-17 19:26:13,382 - metrics_analysis - INFO - Processing original model for LH
+2025-05-17 19:26:13,382 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/lh_cleaned.gexf
+2025-05-17 19:26:13,393 - metrics_analysis - INFO - Analyzing brain region: MB
+2025-05-17 19:26:13,393 - fly_brain - INFO - Found original model for mb at /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/mb_cleaned.gexf
+2025-05-17 19:26:13,394 - fly_brain - INFO - Found configuration models for mb in null_models directory
+2025-05-17 19:26:13,394 - metrics_analysis - INFO - Available models for MB: ['configuration_model', 'original']
+2025-05-17 19:26:13,394 - metrics_analysis - INFO - Processing original model for MB
+2025-05-17 19:26:13,394 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/mb_cleaned.gexf
+2025-05-17 19:26:13,396 - fly_brain - INFO - Found configuration models for fb in null_models directory
+2025-05-17 19:26:13,455 - metrics_analysis - INFO - Available models for FB: ['configuration_model', 'original']
+2025-05-17 19:26:13,455 - metrics_analysis - INFO - Processing original model for FB
+2025-05-17 19:26:13,455 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/fb_cleaned.gexf
+2025-05-17 19:26:13,479 - metrics_analysis - INFO - Analyzing brain region: TEST_REGION
+2025-05-17 19:26:13,480 - metrics_analysis - INFO - Available models for TEST_REGION: []
+2025-05-17 19:26:13,480 - metrics_analysis - WARNING - No models found for region TEST_REGION
+2025-05-17 19:26:13,704 - fly_brain - INFO - Successfully loaded graph with 1041 nodes and 10945 edges
+2025-05-17 19:26:13,708 - src.metrics - INFO - Converting directed graph with 1041 nodes to undirected for metrics calculation
+2025-05-17 19:26:13,780 - fly_brain - INFO - Successfully loaded graph with 598 nodes and 13171 edges
+2025-05-17 19:26:13,780 - src.metrics - INFO - Converting directed graph with 598 nodes to undirected for metrics calculation
+2025-05-17 19:26:13,841 - fly_brain - INFO - Successfully loaded graph with 854 nodes and 43854 edges
+2025-05-17 19:26:13,841 - src.metrics - INFO - Converting directed graph with 854 nodes to undirected for metrics calculation
+2025-05-17 19:26:14,122 - fly_brain - INFO - Successfully loaded graph with 3712 nodes and 100567 edges
+2025-05-17 19:26:14,122 - src.metrics - INFO - Converting directed graph with 3712 nodes to undirected for metrics calculation
+2025-05-17 19:26:14,392 - fly_brain - INFO - Successfully loaded graph with 4366 nodes and 172671 edges
+2025-05-17 19:26:14,392 - src.metrics - INFO - Converting directed graph with 4366 nodes to undirected for metrics calculation
+2025-05-17 19:28:20,657 - metrics_analysis - INFO - Analyzing brain region: AL
+2025-05-17 19:28:20,658 - fly_brain - INFO - Found original model for al at /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/al_cleaned.gexf
+2025-05-17 19:28:20,658 - fly_brain - INFO - Found configuration models for al in null_models directory
+2025-05-17 19:28:20,659 - metrics_analysis - INFO - Available models for AL: ['configuration_model', 'original']
+2025-05-17 19:28:20,666 - metrics_analysis - INFO - Processing original model for AL
+2025-05-17 19:28:20,666 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/al_cleaned.gexf
+2025-05-17 19:28:20,702 - fly_brain - INFO - Successfully loaded graph with 1041 nodes and 10945 edges
+2025-05-17 19:28:20,702 - src.metrics - INFO - Converting directed graph with 1041 nodes to undirected for metrics calculation
+2025-05-17 19:28:31,416 - metrics_analysis - INFO - Completed metrics for AL original in 10.71 seconds
+2025-05-17 19:28:31,416 - metrics_analysis - INFO - Processing configuration_model model for AL
+2025-05-17 19:28:31,417 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/al_configuration_seed456.gexf
+2025-05-17 19:28:31,511 - fly_brain - INFO - Successfully loaded graph with 1041 nodes and 9900 edges
+2025-05-17 19:29:10,343 - metrics_analysis - INFO - Completed metrics for AL configuration_model in 38.83 seconds
+2025-05-17 19:29:10,353 - fly_brain - INFO - Saved metrics to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/tables/AL_metrics_20250517_192820.csv
+2025-05-17 19:29:10,353 - metrics_analysis - INFO - Completed analysis of AL in 49.70 seconds
+2025-05-17 19:29:10,353 - metrics_analysis - INFO - Successfully computed metrics for AL in 49.70 seconds
+2025-05-17 19:29:14,181 - metrics_analysis - INFO - Starting network metrics analysis
+2025-05-17 19:29:14,181 - metrics_analysis - INFO - Found 6 brain regions: ['AL', 'EB', 'FB', 'LH', 'MB', 'TEST_REGION']
+2025-05-17 19:29:14,181 - metrics_analysis - INFO - Using 14 CPU cores for parallel processing
+2025-05-17 19:29:15,444 - metrics_analysis - INFO - Analyzing brain region: AL
+2025-05-17 19:29:15,444 - fly_brain - INFO - Found original model for al at /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/al_cleaned.gexf
+2025-05-17 19:29:15,446 - fly_brain - INFO - Found configuration models for al in null_models directory
+2025-05-17 19:29:15,452 - metrics_analysis - INFO - Available models for AL: ['configuration_model', 'original']
+2025-05-17 19:29:15,505 - metrics_analysis - INFO - Processing original model for AL
+2025-05-17 19:29:15,505 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/al_cleaned.gexf
+2025-05-17 19:29:15,773 - metrics_analysis - INFO - Analyzing brain region: EB
+2025-05-17 19:29:15,774 - fly_brain - INFO - Found original model for eb at /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/eb_cleaned.gexf
+2025-05-17 19:29:15,775 - fly_brain - INFO - Found configuration models for eb in null_models directory
+2025-05-17 19:29:15,775 - metrics_analysis - INFO - Available models for EB: ['configuration_model', 'original']
+2025-05-17 19:29:15,777 - metrics_analysis - INFO - Processing original model for EB
+2025-05-17 19:29:15,777 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/eb_cleaned.gexf
+2025-05-17 19:29:15,876 - metrics_analysis - INFO - Analyzing brain region: FB
+2025-05-17 19:29:15,876 - fly_brain - INFO - Found original model for fb at /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/fb_cleaned.gexf
+2025-05-17 19:29:15,876 - fly_brain - INFO - Found configuration models for fb in null_models directory
+2025-05-17 19:29:15,876 - metrics_analysis - INFO - Available models for FB: ['configuration_model', 'original']
+2025-05-17 19:29:15,878 - metrics_analysis - INFO - Processing original model for FB
+2025-05-17 19:29:15,878 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/fb_cleaned.gexf
+2025-05-17 19:29:15,908 - metrics_analysis - INFO - Analyzing brain region: LH
+2025-05-17 19:29:15,908 - fly_brain - INFO - Found original model for lh at /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/lh_cleaned.gexf
+2025-05-17 19:29:15,908 - fly_brain - INFO - Found configuration models for lh in null_models directory
+2025-05-17 19:29:15,908 - metrics_analysis - INFO - Available models for LH: ['configuration_model', 'original']
+2025-05-17 19:29:15,910 - metrics_analysis - INFO - Processing original model for LH
+2025-05-17 19:29:15,910 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/lh_cleaned.gexf
+2025-05-17 19:29:15,955 - metrics_analysis - INFO - Analyzing brain region: MB
+2025-05-17 19:29:15,956 - fly_brain - INFO - Found original model for mb at /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/mb_cleaned.gexf
+2025-05-17 19:29:15,956 - fly_brain - INFO - Found configuration models for mb in null_models directory
+2025-05-17 19:29:15,957 - metrics_analysis - INFO - Available models for MB: ['configuration_model', 'original']
+2025-05-17 19:29:16,043 - metrics_analysis - INFO - Analyzing brain region: TEST_REGION
+2025-05-17 19:29:16,044 - metrics_analysis - INFO - Available models for TEST_REGION: []
+2025-05-17 19:29:16,044 - metrics_analysis - WARNING - No models found for region TEST_REGION
+2025-05-17 19:29:16,115 - metrics_analysis - INFO - Processing original model for MB
+2025-05-17 19:29:16,115 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/mb_cleaned.gexf
+2025-05-17 19:29:16,203 - fly_brain - INFO - Successfully loaded graph with 1041 nodes and 10945 edges
+2025-05-17 19:29:16,203 - src.metrics - INFO - Converting directed graph with 1041 nodes to undirected for metrics calculation
+2025-05-17 19:29:16,428 - fly_brain - INFO - Successfully loaded graph with 598 nodes and 13171 edges
+2025-05-17 19:29:16,429 - src.metrics - INFO - Converting directed graph with 598 nodes to undirected for metrics calculation
+2025-05-17 19:29:16,530 - fly_brain - INFO - Successfully loaded graph with 854 nodes and 43854 edges
+2025-05-17 19:29:16,530 - src.metrics - INFO - Converting directed graph with 854 nodes to undirected for metrics calculation
+2025-05-17 19:29:16,806 - fly_brain - INFO - Successfully loaded graph with 3712 nodes and 100567 edges
+2025-05-17 19:29:16,807 - src.metrics - INFO - Converting directed graph with 3712 nodes to undirected for metrics calculation
+2025-05-17 19:29:17,082 - fly_brain - INFO - Successfully loaded graph with 4366 nodes and 172671 edges
+2025-05-17 19:29:17,082 - src.metrics - INFO - Converting directed graph with 4366 nodes to undirected for metrics calculation
+2025-05-17 19:40:29,681 - metrics_analysis - INFO - Completed metrics for MB original in 673.25 seconds
+2025-05-17 19:40:29,681 - metrics_analysis - INFO - Processing configuration_model model for MB
+2025-05-17 19:40:29,682 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/mb_configuration_seed456.gexf
+2025-05-17 19:40:29,820 - fly_brain - INFO - Successfully loaded graph with 598 nodes and 11368 edges
+2025-05-17 19:44:43,326 - metrics_analysis - INFO - Completed metrics for MB configuration_model in 253.51 seconds
+2025-05-17 19:44:43,351 - fly_brain - INFO - Saved metrics to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/tables/MB_metrics_20250517_192915.csv
+2025-05-17 19:44:43,351 - metrics_analysis - INFO - Completed analysis of MB in 927.40 seconds
+2025-05-17 20:32:56,195 - metrics_analysis - INFO - Completed metrics for AL original in 3819.99 seconds
+2025-05-17 20:32:56,196 - metrics_analysis - INFO - Processing configuration_model model for AL
+2025-05-17 20:32:56,196 - fly_brain - INFO - Trying to load graph from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/processed/null_models/al_configuration_seed456.gexf
+2025-05-17 20:32:56,478 - fly_brain - INFO - Successfully loaded graph with 1041 nodes and 9900 edges

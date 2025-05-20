@@ -1,0 +1,16 @@
+Original Graph: 1041 nodes, 8246 edges
+Coarsened Graph: 521 nodes, 1440 edges
+Reduction ratio: 0.5005
+
+Original degree stats: min=1, max=420, avg=15.84, median=12.00
+Coarsened degree stats: min=1, max=227, avg=5.53, median=4.00
+
+Original clustering coefficient: 0.3642
+Coarsened clustering coefficient: 0.3744
+
+Original connected components: 1
+Coarsened connected components: 1
+
+Original average shortest path length: 3.1208
+Coarsened average shortest path length: 3.4939
+

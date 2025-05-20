@@ -1,0 +1,23 @@
+2025-05-17 19:07:54,395 - root - INFO - Erdos-Renyi graph is not connected. Using largest connected component with 935 nodes.
+2025-05-17 19:07:54,396 - root - INFO - Computing metrics for Erdos-Renyi graph...
+2025-05-17 19:07:56,146 - root - ERROR - Error computing Laplacian spectrum: matrix type must be 'f', 'd', 'F', or 'D'
+2025-05-17 19:07:56,147 - root - ERROR - Error computing spectral density: matrix type must be 'f', 'd', 'F', or 'D'
+2025-05-17 19:07:56,147 - root - INFO - Computing metrics for Barabasi-Albert graph...
+2025-05-17 19:07:57,742 - root - ERROR - Error computing Laplacian spectrum: matrix type must be 'f', 'd', 'F', or 'D'
+2025-05-17 19:07:57,743 - root - ERROR - Error computing spectral density: matrix type must be 'f', 'd', 'F', or 'D'
+2025-05-17 19:07:57,743 - root - INFO - Computing metrics for Watts-Strogatz graph...
+2025-05-17 19:07:59,340 - root - ERROR - Error computing Laplacian spectrum: matrix type must be 'f', 'd', 'F', or 'D'
+2025-05-17 19:07:59,342 - root - ERROR - Error computing spectral density: matrix type must be 'f', 'd', 'F', or 'D'
+2025-05-17 19:07:59,342 - root - INFO - Computing metrics for Regular Random graph...
+2025-05-17 19:08:01,030 - root - ERROR - Error computing Laplacian spectrum: matrix type must be 'f', 'd', 'F', or 'D'
+2025-05-17 19:08:01,032 - root - ERROR - Error computing spectral density: matrix type must be 'f', 'd', 'F', or 'D'
+2025-05-17 19:08:01,534 - root - INFO - Degree metrics plots saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/degree_metrics/degree_distribution_comparison_20250517_190801.png
+2025-05-17 19:08:01,756 - root - INFO - Clustering metrics plots saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/clustering_metrics/clustering_comparison_20250517_190801.png
+2025-05-17 19:08:04,198 - root - INFO - Path metrics plots saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/path_metrics/path_metrics_comparison_20250517_190801.png
+2025-05-17 19:08:07,668 - root - INFO - Centrality metrics plots saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/centrality_metrics/centrality_comparison_20250517_190804.png
+2025-05-17 19:08:07,668 - root - INFO - Spectral metrics computation skipped due to compatibility issues
+2025-05-17 19:08:07,802 - root - INFO - Running percolation simulations...
+2025-05-17 19:08:09,425 - root - INFO - Percolation summary plot saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/percolation/percolation_comparison_20250517_190801.png
+2025-05-17 19:08:09,425 - root - INFO - Individual percolation plots saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/percolation
+2025-05-17 19:08:09,425 - root - INFO - Metrics summary saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/tables/graph_metrics_summary_20250517_190801.csv
+2025-05-17 19:08:09,425 - root - INFO - Analysis completed. Results saved to results/tables and results/figures directories.
