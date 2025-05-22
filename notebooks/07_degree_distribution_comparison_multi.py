@@ -64,6 +64,37 @@ def compute_degree_distribution(G):
     
     return unique_degrees, frequencies
 
+def generate_power_law(xmin, xmax, alpha, num_points=100):
+    """
+    Generate a power law distribution with exponent alpha.
+    
+    Parameters:
+    -----------
+    xmin : float
+        Minimum x value
+    xmax : float
+        Maximum x value
+    alpha : float
+        Power law exponent
+    num_points : int
+        Number of points to generate
+        
+    Returns:
+    --------
+    tuple
+        (x_values, y_values) for power law distribution
+    """
+    # Generate x values on log scale
+    x_values = np.logspace(np.log10(xmin), np.log10(xmax), num=num_points)
+    
+    # Generate power law y values: p(x) ∝ x^(-alpha)
+    y_values = x_values**(-alpha)
+    
+    # Normalize to have the same starting point as real data
+    # We'll scale during plotting to match the actual data
+    
+    return x_values, y_values
+
 def get_region_network_data(region_name):
     """
     Get degree distribution data for a brain region's networks without plotting.
@@ -191,6 +222,13 @@ def create_panel_figure(all_region_data):
         'coarsened': 'Coarsened Network (0.5)'
     }
     
+    # Define power law exponents to show
+    power_laws = [
+        {'alpha': 2.1, 'color': '#FF9999', 'label': 'Power law α=2.1'},
+        {'alpha': 2.5, 'color': '#99FF99', 'label': 'Power law α=2.5'},
+        {'alpha': 2.9, 'color': '#9999FF', 'label': 'Power law α=2.9'}
+    ]
+    
     # Add plots for each region and model
     for i, region_data in enumerate(valid_region_data):
         region_name = region_data['region']
@@ -218,6 +256,31 @@ def create_panel_figure(all_region_data):
                             markevery=max(1, len(degrees) // 10),
                             linewidth=2)
                     
+                    # Add power law overlays
+                    if len(degrees) > 1:
+                        xmin, xmax = min(degrees), max(degrees)
+                        ymin, ymax = min(freqs), max(freqs)
+                        
+                        # Find a suitable scaling point - use the median degree value as reference
+                        mid_idx = len(degrees) // 3  # Use the 1/3 point instead of median for better visibility
+                        ref_x, ref_y = degrees[mid_idx], freqs[mid_idx]
+                        
+                        for power_law in power_laws:
+                            # Generate power law points
+                            x_values, y_values = generate_power_law(xmin, xmax, power_law['alpha'])
+                            
+                            # Scale to match at the reference point
+                            scale_factor = ref_y / (ref_x**(-power_law['alpha']))
+                            y_scaled = y_values * scale_factor
+                            
+                            # Plot power law overlay with translucency
+                            if i == 0 and j == 0:  # Only add to legend once
+                                ax.plot(x_values, y_scaled, '--', color=power_law['color'], 
+                                        alpha=0.4, linewidth=1.5, label=power_law['label'])
+                            else:
+                                ax.plot(x_values, y_scaled, '--', color=power_law['color'], 
+                                        alpha=0.4, linewidth=1.5)
+                    
                     # Set log scales
                     ax.set_xscale('log')
                     ax.set_yscale('log')
@@ -235,8 +298,14 @@ def create_panel_figure(all_region_data):
                 if j == 0:
                     ax.set_ylabel(f"{region_name}", fontsize=14, fontweight='bold')
                     
-                # Add legend
-                ax.legend(loc='upper right', fontsize=10)
+                # Add legend - only for the first panel to avoid clutter
+                if i == 0 and j == 0:
+                    ax.legend(loc='upper right', fontsize=9, framealpha=0.7)
+                else:
+                    # For other panels, only show the network model in legend
+                    handles, labels = ax.get_legend_handles_labels()
+                    if handles:
+                        ax.legend([handles[0]], [labels[0]], loc='upper right', fontsize=9, framealpha=0.7)
                 
                 # Add grid
                 ax.grid(True, alpha=0.3, linestyle='--')
@@ -247,8 +316,18 @@ def create_panel_figure(all_region_data):
                         transform=ax.transAxes)
                 ax.set_axis_off()
     
+    # Add power law legend in a separate box at the bottom
+    power_law_legend_elements = [
+        plt.Line2D([0], [0], color=pl['color'], linestyle='--', alpha=0.7, label=pl['label'])
+        for pl in power_laws
+    ]
+    
+    fig.legend(handles=power_law_legend_elements, loc='lower center', 
+               bbox_to_anchor=(0.5, 0.01), ncol=len(power_laws), fontsize=12, 
+               framealpha=0.7, title="Theoretical Power Laws")
+    
     # Add common x and y labels
-    fig.text(0.5, 0.01, 'Degree (k)', fontsize=16, fontweight='bold', ha='center')
+    fig.text(0.5, 0.02, 'Degree (k)', fontsize=16, fontweight='bold', ha='center')
     fig.text(0.01, 0.5, 'Normalized Frequency P(k)', fontsize=16, fontweight='bold', 
              va='center', rotation='vertical')
     
@@ -259,8 +338,8 @@ def create_panel_figure(all_region_data):
     # Add timestamp annotation
     fig.text(0.01, 0.01, f"Generated: {timestamp}", fontsize=8, color='gray')
     
-    # Tight layout with some padding
-    plt.tight_layout(rect=[0.02, 0.03, 0.98, 0.95])
+    # Tight layout with padding for the bottom legend
+    plt.tight_layout(rect=[0.02, 0.06, 0.98, 0.95])
     
     # Save figure
     output_filename = f"panel_degree_distribution_{timestamp}.png"

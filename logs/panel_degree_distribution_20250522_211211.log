@@ -1,0 +1,46 @@
+2025-05-22 21:12:11,831 - fly_brain - INFO - Analyzing degree distributions for regions: EB, FB, MB, LH, AL
+2025-05-22 21:12:11,831 - fly_brain - INFO - Processing 5 regions sequentially
+2025-05-22 21:12:11,831 - fly_brain - INFO - Processing region: EB
+2025-05-22 21:12:11,977 - fly_brain - INFO - Loaded processed EB network: 854 nodes, 43854 edges
+2025-05-22 21:12:11,977 - fly_brain - INFO - Loaded original network with 854 nodes and 43854 edges
+2025-05-22 21:12:12,109 - fly_brain - INFO - Loaded configuration model for EB: 854 nodes, 32435 edges
+2025-05-22 21:12:12,110 - fly_brain - INFO - Loaded unscaled CM with 854 nodes and 32435 edges
+2025-05-22 21:12:12,110 - fly_brain - INFO - Loading coarsened network for eb from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/Coarsened Networks (0.5)/eb_cleaned_coarsened.gexf
+2025-05-22 21:12:12,119 - fly_brain - INFO - Successfully loaded coarsened network with 427 nodes and 1254 edges
+2025-05-22 21:12:12,119 - fly_brain - INFO - Loaded coarsened network with 427 nodes and 1254 edges
+2025-05-22 21:12:12,120 - fly_brain - INFO - Processing region: FB
+2025-05-22 21:12:12,755 - fly_brain - INFO - Loaded processed FB network: 4366 nodes, 172671 edges
+2025-05-22 21:12:12,755 - fly_brain - INFO - Loaded original network with 4366 nodes and 172671 edges
+2025-05-22 21:12:13,507 - fly_brain - INFO - Loaded configuration model for FB: 4366 nodes, 160888 edges
+2025-05-22 21:12:13,507 - fly_brain - INFO - Loaded unscaled CM with 4366 nodes and 160888 edges
+2025-05-22 21:12:13,509 - fly_brain - INFO - Loading coarsened network for fb from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/Coarsened Networks (0.5)/fb_cleaned_coarsened.gexf
+2025-05-22 21:12:13,548 - fly_brain - INFO - Successfully loaded coarsened network with 2183 nodes and 9797 edges
+2025-05-22 21:12:13,548 - fly_brain - INFO - Loaded coarsened network with 2183 nodes and 9797 edges
+2025-05-22 21:12:13,549 - fly_brain - INFO - Processing region: MB
+2025-05-22 21:12:13,588 - fly_brain - INFO - Loaded processed MB network: 598 nodes, 13171 edges
+2025-05-22 21:12:13,588 - fly_brain - INFO - Loaded original network with 598 nodes and 13171 edges
+2025-05-22 21:12:13,654 - fly_brain - INFO - Loaded configuration model for MB: 598 nodes, 11392 edges
+2025-05-22 21:12:13,654 - fly_brain - INFO - Loaded unscaled CM with 598 nodes and 11392 edges
+2025-05-22 21:12:13,654 - fly_brain - INFO - Loading coarsened network for mb from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/Coarsened Networks (0.5)/mb_cleaned_coarsened.gexf
+2025-05-22 21:12:13,663 - fly_brain - INFO - Successfully loaded coarsened network with 299 nodes and 2441 edges
+2025-05-22 21:12:13,663 - fly_brain - INFO - Loaded coarsened network with 299 nodes and 2441 edges
+2025-05-22 21:12:13,663 - fly_brain - INFO - Processing region: LH
+2025-05-22 21:12:14,119 - fly_brain - INFO - Loaded processed LH network: 3712 nodes, 100567 edges
+2025-05-22 21:12:14,119 - fly_brain - INFO - Loaded original network with 3712 nodes and 100567 edges
+2025-05-22 21:12:14,635 - fly_brain - INFO - Loaded configuration model for LH: 3712 nodes, 95974 edges
+2025-05-22 21:12:14,636 - fly_brain - INFO - Loaded unscaled CM with 3712 nodes and 95974 edges
+2025-05-22 21:12:14,637 - fly_brain - INFO - Loading coarsened network for lh from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/Coarsened Networks (0.5)/lh_cleaned_coarsened.gexf
+2025-05-22 21:12:14,705 - fly_brain - INFO - Successfully loaded coarsened network with 1856 nodes and 17998 edges
+2025-05-22 21:12:14,705 - fly_brain - INFO - Loaded coarsened network with 1856 nodes and 17998 edges
+2025-05-22 21:12:14,706 - fly_brain - INFO - Processing region: AL
+2025-05-22 21:12:14,783 - fly_brain - INFO - Loaded processed AL network: 1041 nodes, 10945 edges
+2025-05-22 21:12:14,783 - fly_brain - INFO - Loaded original network with 1041 nodes and 10945 edges
+2025-05-22 21:12:14,818 - fly_brain - INFO - Loaded configuration model for AL: 1041 nodes, 9895 edges
+2025-05-22 21:12:14,818 - fly_brain - INFO - Loaded unscaled CM with 1041 nodes and 9895 edges
+2025-05-22 21:12:14,819 - fly_brain - INFO - Loading coarsened network for al from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/Coarsened Networks (0.5)/al_cleaned_coarsened.gexf
+2025-05-22 21:12:14,826 - fly_brain - INFO - Successfully loaded coarsened network with 521 nodes and 1440 edges
+2025-05-22 21:12:14,826 - fly_brain - INFO - Loaded coarsened network with 521 nodes and 1440 edges
+2025-05-22 21:12:14,826 - fly_brain - INFO - Creating panel figure
+2025-05-22 21:12:17,274 - fly_brain - INFO - Saved panel figure to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/panel_degree_distribution_20250522_211211.png
+2025-05-22 21:12:17,275 - fly_brain - INFO - Panel figure created at: /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/panel_degree_distribution_20250522_211211.png
+2025-05-22 21:12:17,275 - fly_brain - INFO - Analysis complete
