@@ -1,0 +1,11 @@
+2025-05-22 20:57:44,752 - fly_brain - INFO - Comparing degree distributions for region: FB
+2025-05-22 20:57:45,379 - fly_brain - INFO - Loaded processed FB network: 4366 nodes, 172671 edges
+2025-05-22 20:57:45,379 - fly_brain - INFO - Loaded original network with 4366 nodes and 172671 edges
+2025-05-22 20:57:46,099 - fly_brain - INFO - Loaded configuration model for FB: 4366 nodes, 160888 edges
+2025-05-22 20:57:46,100 - fly_brain - INFO - Loaded unscaled CM with 4366 nodes and 160888 edges
+2025-05-22 20:57:46,299 - fly_brain - INFO - Loaded scaled_configuration model for FB: 1500 nodes, 49361 edges
+2025-05-22 20:57:46,299 - fly_brain - INFO - Loaded downscaled CM with 1500 nodes and 49361 edges
+2025-05-22 20:57:46,300 - fly_brain - INFO - Loading coarsened network for fb from /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/data/Coarsened Networks (0.5)/fb_cleaned_coarsened.gexf
+2025-05-22 20:57:46,365 - fly_brain - INFO - Successfully loaded coarsened network with 2183 nodes and 9797 edges
+2025-05-22 20:57:46,366 - fly_brain - INFO - Loaded coarsened network with 2183 nodes and 9797 edges
+2025-05-22 20:57:47,072 - fly_brain - INFO - Saved figure to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/FB_degree_distribution_comparison.png
