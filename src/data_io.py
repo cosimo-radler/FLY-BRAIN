@@ -28,6 +28,7 @@ logger = logging.getLogger("fly_brain")
 PROJECT_ROOT = Path(__file__).parents[1].resolve()
 DATA_RAW = PROJECT_ROOT / "data" / "raw"
 DATA_PROCESSED = PROJECT_ROOT / "data" / "processed"
+DATA_COARSENED = PROJECT_ROOT / "data" / "Coarsened Networks (0.5)"
 RESULTS_DIR = PROJECT_ROOT / "results"
 RESULTS_TABLES = RESULTS_DIR / "tables"
 RESULTS_FIGURES = RESULTS_DIR / "figures"
@@ -64,7 +65,7 @@ def get_available_models(brain_region):
         brain_region (str): Name of the brain region
         
     Returns:
-        list: Names of available models (original, configuration models, etc.)
+        list: Names of available models (original, configuration models, coarsened, etc.)
     """
     brain_region = brain_region.lower()  # Convert to lowercase for file matching
     
@@ -76,6 +77,12 @@ def get_available_models(brain_region):
     if cleaned_path.exists():
         model_names.append("original")
         logger.info(f"Found original model for {brain_region} at {cleaned_path}")
+    
+    # Check for coarsened models in data/Coarsened Networks (0.5)
+    coarsened_path = DATA_COARSENED / f"{brain_region}_cleaned_coarsened.gexf"
+    if coarsened_path.exists():
+        model_names.append("coarsened")
+        logger.info(f"Found coarsened model for {brain_region} at {coarsened_path}")
     
     # Check for other model types in the data/processed/null_models directory
     null_model_dir = DATA_PROCESSED / "null_models"
@@ -106,7 +113,7 @@ def load_graph(brain_region, model_type="original"):
     
     Args:
         brain_region (str): Name of the brain region (e.g., 'AL', 'MB')
-        model_type (str): Type of model (original, configuration_model, spectral_sparsifier)
+        model_type (str): Type of model (original, configuration_model, spectral_sparsifier, coarsened)
         
     Returns:
         networkx.Graph: The loaded graph
@@ -119,6 +126,10 @@ def load_graph(brain_region, model_type="original"):
     # For original models, first try the standardized cleaned GEXF files
     if model_type == "original":
         potential_paths.append(DATA_PROCESSED / f"{brain_region}_cleaned.gexf")
+    
+    # For coarsened models
+    elif model_type == "coarsened":
+        potential_paths.append(DATA_COARSENED / f"{brain_region}_cleaned_coarsened.gexf")
     
     # Check in region-specific subdirectory
     region_dir = DATA_PROCESSED / brain_region
@@ -173,6 +184,35 @@ def load_graph(brain_region, model_type="original"):
     # Handle the case when no graph is found
     logger.error(f"No graph found for region {brain_region} and model {model_type}")
     return None
+
+def load_coarsened_network(brain_region):
+    """
+    Load a coarsened network for a given brain region.
+    
+    Args:
+        brain_region (str): Name of the brain region (e.g., 'AL', 'MB')
+        
+    Returns:
+        networkx.Graph or None: The loaded coarsened network, or None if not found
+    """
+    brain_region = brain_region.lower()  # Convert to lowercase for file matching
+    
+    # Define path to coarsened network file
+    coarsened_path = DATA_COARSENED / f"{brain_region}_cleaned_coarsened.gexf"
+    
+    # Try to load the coarsened network
+    try:
+        if coarsened_path.exists():
+            logger.info(f"Loading coarsened network for {brain_region} from {coarsened_path}")
+            G = nx.read_gexf(coarsened_path)
+            logger.info(f"Successfully loaded coarsened network with {len(G)} nodes and {G.number_of_edges()} edges")
+            return G
+        else:
+            logger.warning(f"Coarsened network file not found for {brain_region}")
+            return None
+    except Exception as e:
+        logger.error(f"Failed to load coarsened network for {brain_region}: {str(e)}")
+        return None
 
 def load_null_models(brain_region, model_type="configuration_model", max_models=10):
     """

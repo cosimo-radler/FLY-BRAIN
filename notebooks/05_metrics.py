@@ -1,15 +1,16 @@
 """
-Network Metrics Analysis Script
+Network Metrics Analysis Script (Simplified)
 
-This script uses the metrics module to compute various network metrics for all available
-brain regions and models. It separates the computation logic (in src/metrics.py) from
-the execution of metrics computation on actual data.
+This script uses the metrics module to compute basic network metrics for all available
+brain regions and models, and provides a single comprehensive bar graph visualization 
+to compare metrics across models.
 
 The script:
 1. Loads all available brain regions and their models
-2. Computes metrics for each graph in parallel using all available CPU cores
+2. Computes basic metrics for each graph
 3. Organizes results into DataFrames
-4. Saves results to CSV files in the results/tables directory
+4. Creates a single comprehensive bar graph visualization
+5. Saves results to CSV files and one visualization plot
 """
 
 import os
@@ -18,6 +19,7 @@ import logging
 import pandas as pd
 import numpy as np
 import networkx as nx
+import matplotlib.pyplot as plt
 from datetime import datetime
 from pathlib import Path
 import multiprocessing as mp
@@ -57,8 +59,12 @@ logger = logging.getLogger("metrics_analysis")
 # Timestamp for file naming
 TIMESTAMP = datetime.now().strftime("%Y%m%d_%H%M%S")
 
+# Create directory for plots if it doesn't exist
+FIGURES_DIR = Path("../results/figures")
+FIGURES_DIR.mkdir(parents=True, exist_ok=True)
 
-def process_model(region, model_type, model_index=None, compute_spectral=True, compute_centrality=True):
+
+def process_model(region, model_type, model_index=None):
     """
     Process a specific model for a given brain region.
     
@@ -66,8 +72,6 @@ def process_model(region, model_type, model_index=None, compute_spectral=True, c
         region (str): Brain region name
         model_type (str): Model type (original, configuration_model, etc.)
         model_index (int, optional): Index for models with multiple instances
-        compute_spectral (bool): Whether to compute spectral metrics
-        compute_centrality (bool): Whether to compute centrality metrics
         
     Returns:
         dict: Metrics for the model or None if loading failed
@@ -95,7 +99,7 @@ def process_model(region, model_type, model_index=None, compute_spectral=True, c
     # Compute metrics
     try:
         start_time = time.time()
-        metrics = compute_all_metrics(G, compute_spectral, compute_centrality)
+        metrics = compute_all_metrics(G)
         elapsed = time.time() - start_time
         
         metrics["model_type"] = model_name
@@ -109,14 +113,127 @@ def process_model(region, model_type, model_index=None, compute_spectral=True, c
         return None
 
 
-def analyze_brain_region(region, compute_spectral=True, compute_centrality=True):
+def plot_comprehensive_comparison(all_metrics_df, timestamp=None):
+    """
+    Create a single comprehensive bar plot comparing metrics across all models and regions.
+    
+    Args:
+        all_metrics_df (DataFrame): DataFrame containing metrics for all regions and models
+        timestamp (str, optional): Timestamp for file naming
+    """
+    if all_metrics_df is None or all_metrics_df.empty:
+        logger.warning("No data available to plot comprehensive comparison")
+        return
+    
+    # Select metrics to plot (basic metrics that are meaningful to compare)
+    metrics_to_plot = [
+        'avg_degree', 'max_degree', 'transitivity', 'avg_clustering', 
+        'global_efficiency'
+    ]
+    
+    # Path metrics will have varying names depending on connectivity
+    path_metric_names = [col for col in all_metrics_df.columns if 'avg_shortest_path' in col]
+    if path_metric_names:
+        metrics_to_plot.extend(path_metric_names[:1])  # Add only one path metric
+    
+    # Add diameter if available
+    diameter_names = [col for col in all_metrics_df.columns if 'diameter' in col]
+    if diameter_names:
+        metrics_to_plot.extend(diameter_names[:1])
+    
+    # Filter to only metrics that exist in the DataFrame
+    metrics_to_plot = [m for m in metrics_to_plot if m in all_metrics_df.columns]
+    
+    if not metrics_to_plot:
+        logger.warning("None of the selected metrics are available")
+        return
+    
+    # Count the number of regions
+    regions = all_metrics_df['region'].unique()
+    n_regions = len(regions)
+    
+    # Create a large figure for the comprehensive comparison
+    plt.figure(figsize=(20, 12))
+    
+    # Calculate the layout
+    n_metrics = len(metrics_to_plot)
+    n_cols = min(3, n_metrics)  # Maximum 3 columns
+    n_rows = (n_metrics + n_cols - 1) // n_cols  # Ceiling division
+    
+    # Prepare a color map for different model types
+    model_types = all_metrics_df['model_type'].unique()
+    try:
+        color_map = plt.cm.get_cmap('tab10', len(model_types))
+    except AttributeError:
+        # Matplotlib 3.7+ compatibility
+        color_map = plt.colormaps['tab10']
+    model_colors = {model: color_map(i) for i, model in enumerate(model_types)}
+    
+    # Create subplots for each metric
+    for i, metric in enumerate(metrics_to_plot):
+        ax = plt.subplot(n_rows, n_cols, i + 1)
+        
+        # Set up positions for bar groups
+        x = np.arange(n_regions)
+        width = 0.8 / len(model_types)  # Width of the bars adjusted for number of model types
+        
+        # Plot bars for each model type
+        for j, model_type in enumerate(model_types):
+            # Extract data for this model type
+            model_data = all_metrics_df[all_metrics_df['model_type'] == model_type].copy()
+            
+            # Prepare the data for each region
+            region_values = []
+            for region in regions:
+                value = model_data[model_data['region'] == region][metric].values
+                if len(value) > 0:
+                    region_values.append(value[0])
+                else:
+                    region_values.append(np.nan)
+            
+            # Plot bars
+            bars = ax.bar(x + (j - len(model_types)/2 + 0.5) * width, region_values, 
+                    width, label=model_type, color=model_colors[model_type])
+            
+            # Add value labels on top of bars if they're not too crowded
+            if len(regions) <= 5:
+                for bar_idx, bar in enumerate(bars):
+                    height = bar.get_height()
+                    if not np.isnan(height):
+                        ax.text(bar.get_x() + bar.get_width()/2., height,
+                               f'{height:.2f}', ha='center', va='bottom',
+                               fontsize=8, rotation=45)
+        
+        # Set title and labels
+        ax.set_title(metric.replace('_', ' ').title())
+        ax.set_xticks(x)
+        ax.set_xticklabels(regions, rotation=45, ha='right')
+        
+        # Add grid lines for readability
+        ax.grid(True, linestyle='--', alpha=0.7)
+        
+        # Only add legend to the first subplot
+        if i == 0:
+            ax.legend(title="Model Types", bbox_to_anchor=(1.05, 1), loc='upper left')
+    
+    plt.tight_layout()
+    plt.suptitle("Comprehensive Metrics Comparison Across Brain Regions", fontsize=16, y=1.02)
+    
+    # Save the plot to the main figures directory
+    output_path = FIGURES_DIR / f"comprehensive_metrics_comparison{'_'+timestamp if timestamp else ''}.png"
+    plt.savefig(output_path, bbox_inches='tight', dpi=300)
+    plt.close()
+    
+    logger.info(f"Created comprehensive comparison plot saved to {output_path}")
+    return output_path
+
+
+def analyze_brain_region(region):
     """
     Compute metrics for all models of a specific brain region.
     
     Args:
         region (str): Name of the brain region
-        compute_spectral (bool): Whether to compute spectral metrics
-        compute_centrality (bool): Whether to compute centrality metrics
         
     Returns:
         pd.DataFrame: DataFrame with metrics for all models of the region
@@ -138,6 +255,10 @@ def analyze_brain_region(region, compute_spectral=True, compute_centrality=True)
     # Process original graph if available
     if "original" in available_models:
         tasks.append((region, "original", None))
+    
+    # Process coarsened graph if available
+    if "coarsened" in available_models:
+        tasks.append((region, "coarsened", None))
     
     # Process configuration models if available
     if "configuration_model" in available_models:
@@ -173,7 +294,7 @@ def analyze_brain_region(region, compute_spectral=True, compute_centrality=True)
     
     for task in task_iter:
         region, model_type, model_index = task
-        metrics = process_model(region, model_type, model_index, compute_spectral, compute_centrality)
+        metrics = process_model(region, model_type, model_index)
         if metrics:
             all_metrics.append(metrics)
     
@@ -197,10 +318,10 @@ def analyze_brain_region(region, compute_spectral=True, compute_centrality=True)
         return None
 
 
-def process_region_parallel(region, compute_spectral=True, compute_centrality=True):
+def process_region_parallel(region):
     """Wrapper function for parallel processing of a region"""
     try:
-        return analyze_brain_region(region, compute_spectral, compute_centrality)
+        return analyze_brain_region(region)
     except Exception as e:
         logger.error(f"Error processing region {region}: {str(e)}")
         return None
@@ -254,9 +375,13 @@ def main():
         # Save combined metrics to CSV
         output_path = save_metrics_results(all_metrics_df, "all_regions_metrics", timestamp=TIMESTAMP)
         
+        # Create the comprehensive comparison plot
+        plot_path = plot_comprehensive_comparison(all_metrics_df, TIMESTAMP)
+        
         total_elapsed = time.time() - total_start_time
         logger.info(f"Completed metrics analysis for {len(valid_results)} brain regions in {total_elapsed:.2f} seconds")
         print(f"\nResults saved to: {output_path}")
+        print(f"Comprehensive plot saved to: {plot_path}")
         print(f"Total processing time: {total_elapsed:.2f} seconds")
     else:
         logger.warning("No metrics computed for any region")
