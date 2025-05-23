@@ -69,6 +69,85 @@ def compute_efficiency(G):
     return {"global_efficiency": nx.global_efficiency(G)}
 
 # -------------------------------------------------------------------------
+# 4. LAPLACIAN MATRIX METRICS
+# -------------------------------------------------------------------------
+
+def compute_laplacian_matrix(G, normalized=False):
+    """
+    Compute the Laplacian matrix of the graph.
+    
+    Parameters:
+    - G: NetworkX graph object
+    - normalized: bool, if True compute normalized Laplacian, else standard Laplacian
+    
+    Returns:
+    - L: numpy array, the Laplacian matrix
+    """
+    if normalized:
+        L = nx.normalized_laplacian_matrix(G, nodelist=sorted(G.nodes()))
+    else:
+        L = nx.laplacian_matrix(G, nodelist=sorted(G.nodes()))
+    
+    return L.toarray()  # Convert sparse matrix to dense array
+
+def compute_laplacian_eigenvalues(G, normalized=False):
+    """
+    Compute eigenvalues of the Laplacian matrix.
+    
+    Parameters:
+    - G: NetworkX graph object
+    - normalized: bool, if True compute normalized Laplacian eigenvalues
+    
+    Returns:
+    - eigenvals: numpy array, sorted eigenvalues (ascending order)
+    """
+    L = compute_laplacian_matrix(G, normalized=normalized)
+    eigenvals = np.linalg.eigvals(L)
+    return np.sort(np.real(eigenvals))  # Sort and take real part
+
+def compute_laplacian_metrics(G):
+    """
+    Compute various metrics related to the Laplacian matrix.
+    
+    Parameters:
+    - G: NetworkX graph object
+    
+    Returns:
+    - dict: Dictionary containing Laplacian-related metrics
+    """
+    metrics = {}
+    
+    # Only compute for connected graphs or largest connected component
+    if not nx.is_connected(G):
+        largest_cc = max(nx.connected_components(G), key=len)
+        G_lcc = G.subgraph(largest_cc).copy()
+        prefix = "lcc_"
+        logger.info(f"Graph not connected, computing Laplacian metrics on LCC with {len(G_lcc)} nodes")
+    else:
+        G_lcc = G
+        prefix = ""
+    
+    # Standard Laplacian eigenvalues
+    eigenvals = compute_laplacian_eigenvalues(G_lcc, normalized=False)
+    metrics[f"{prefix}laplacian_eigenvals"] = eigenvals
+    metrics[f"{prefix}laplacian_second_smallest"] = eigenvals[1] if len(eigenvals) > 1 else 0.0
+    metrics[f"{prefix}laplacian_largest"] = eigenvals[-1]
+    metrics[f"{prefix}algebraic_connectivity"] = eigenvals[1] if len(eigenvals) > 1 else 0.0
+    
+    # Normalized Laplacian eigenvalues
+    eigenvals_norm = compute_laplacian_eigenvalues(G_lcc, normalized=True)
+    metrics[f"{prefix}normalized_laplacian_eigenvals"] = eigenvals_norm
+    metrics[f"{prefix}normalized_laplacian_largest"] = eigenvals_norm[-1]
+    
+    # Spectral gap (difference between two smallest eigenvalues)
+    if len(eigenvals) > 1:
+        metrics[f"{prefix}spectral_gap"] = eigenvals[1] - eigenvals[0]
+    else:
+        metrics[f"{prefix}spectral_gap"] = 0.0
+    
+    return metrics
+
+# -------------------------------------------------------------------------
 # MAIN METRIC COMPUTATION FUNCTION
 # -------------------------------------------------------------------------
 
@@ -115,5 +194,8 @@ def compute_all_metrics(G):
         metrics["path_metrics_error"] = f"Path computation failed (graph may be disconnected): {str(e)}"
     
     metrics.update(compute_efficiency(G_undirected))
+    
+    # 4. Laplacian matrix metrics
+    metrics.update(compute_laplacian_metrics(G_undirected))
     
     return metrics 

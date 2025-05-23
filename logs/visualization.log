@@ -828,3 +828,10 @@ Key "4_swc" not found
 2025-05-22 21:56:03,407 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
 2025-05-23 07:12:59,210 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
 2025-05-23 07:12:59,211 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-23 13:25:10,736 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-23 13:25:10,737 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-23 13:25:12,491 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-23 13:25:13,365 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-23 13:25:13,365 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-23 13:25:13,365 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-23 13:25:13,366 - __main__ - INFO - Fetching neurons from region: LA (limit: 50)

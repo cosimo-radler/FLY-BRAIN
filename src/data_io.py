@@ -21,7 +21,7 @@ import json
 from pathlib import Path
 import matplotlib.pyplot as plt
 
-import src.config as config
+import config
 
 logger = logging.getLogger("fly_brain")
 
