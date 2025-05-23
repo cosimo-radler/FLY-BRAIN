@@ -19,6 +19,7 @@ import glob
 from datetime import datetime
 import json
 from pathlib import Path
+import matplotlib.pyplot as plt
 
 import src.config as config
 
@@ -447,3 +448,30 @@ def load_null_model(region, model_type, seed=None, n_target=None):
     logger.info(f"Loaded {model_type} model for {region}: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
     
     return G
+
+def save_figure(fig, filepath, dpi=300, bbox_inches='tight', format=None):
+    """
+    Save a matplotlib figure to file with standard parameters.
+    
+    Args:
+        fig (matplotlib.figure.Figure): Figure to save
+        filepath (str or Path): Path where to save the figure
+        dpi (int): Resolution (dots per inch)
+        bbox_inches (str): Bounding box parameter
+        format (str): File format override (if None, inferred from extension)
+    
+    Returns:
+        str: Path to the saved file
+    """
+    # Ensure the directory exists
+    output_dir = os.path.dirname(filepath)
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Save the figure
+    try:
+        fig.savefig(filepath, dpi=dpi, bbox_inches=bbox_inches, format=format)
+        logger.info(f"Figure saved to {filepath}")
+        return filepath
+    except Exception as e:
+        logger.error(f"Failed to save figure to {filepath}: {e}")
+        return None

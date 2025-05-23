@@ -1,0 +1,830 @@
+2025-05-22 21:28:15,286 - __main__ - WARNING - NEUPRINT_TOKEN not set. Using guest mode with limited access.
+2025-05-22 21:28:15,748 - __main__ - ERROR - Failed to connect to neuPrint server: Error accessing GET https://neuprint.janelia.org/api/dbmeta/datasets
+
+Returned Error (401)
+2025-05-22 21:28:41,539 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:28:41,541 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:28:42,057 - __main__ - INFO - Found 63 brain regions
+2025-05-22 21:28:47,827 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:28:47,828 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:28:47,828 - __main__ - INFO - Fetching neurons from region: FB (limit: 10)
+2025-05-22 21:30:13,610 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:30:13,610 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:30:15,117 - __main__ - ERROR - neuprint-python not installed. Run: pip install neuprint-python
+2025-05-22 21:33:04,019 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:33:04,019 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:33:04,613 - __main__ - ERROR - Error importing neuprint-python: cannot import name 'fetch_skeletons' from 'neuprint' (/opt/anaconda3/lib/python3.12/site-packages/neuprint/__init__.py)
+2025-05-22 21:34:21,048 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:34:21,048 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:34:22,497 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:34:23,407 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:34:23,407 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:34:23,407 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:34:23,912 - __main__ - INFO - Found 63 brain regions
+2025-05-22 21:34:28,811 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:34:28,811 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:34:29,759 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:34:30,459 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:34:30,460 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:34:30,460 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:34:30,460 - __main__ - INFO - Fetching neurons from region: EB (limit: 3)
+2025-05-22 21:34:31,184 - __main__ - INFO - Created NeuronCriteria with rois=[EB]
+2025-05-22 21:34:31,184 - __main__ - INFO - Calling fetch_neurons...
+2025-05-22 21:34:31,184 - __main__ - ERROR - Error fetching neurons from EB: fetch_neurons() got an unexpected keyword argument 'limit'
+2025-05-22 21:34:31,187 - __main__ - ERROR - Traceback (most recent call last):
+  File "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/notebooks/08_visualization.py", line 139, in fetch_neurons_by_region
+    neurons = fetch_neurons(criteria, client=c, limit=limit)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/neuprint/client.py", line 240, in wrapper
+    return f(*args, **kwargs, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/neuprint/queries/neuroncriteria.py", line 33, in wrapper
+    callargs = inspect.getcallargs(f, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/inspect.py", line 1574, in getcallargs
+    raise TypeError("%s() got an unexpected keyword argument %r" %
+TypeError: fetch_neurons() got an unexpected keyword argument 'limit'
+
+2025-05-22 21:34:49,017 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:34:49,017 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:34:49,993 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:34:50,693 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:34:50,693 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:34:50,693 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:34:50,693 - __main__ - INFO - Fetching neurons from region: EB (limit: 3)
+2025-05-22 21:34:51,314 - __main__ - INFO - Created NeuronCriteria with rois=[EB]
+2025-05-22 21:34:51,315 - __main__ - INFO - Calling fetch_neurons...
+2025-05-22 21:34:56,906 - __main__ - INFO - Limiting results from 1062 to 3 neurons
+2025-05-22 21:34:56,906 - __main__ - INFO - Fetched 3 neurons from EB
+2025-05-22 21:34:56,906 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:34:56,907 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:34:56,907 - __main__ - INFO - Fetching skeletons for 3 neurons
+2025-05-22 21:34:57,423 - __main__ - INFO - Successfully fetched skeleton for body ID 0
+2025-05-22 21:34:57,637 - __main__ - WARNING - Could not fetch skeleton for body ID 1: Error accessing GET https://neuprint.janelia.org/api/skeletons/skeleton/hemibrain:v1.2.1/1?format=swc
+
+Returned Error (400):
+
+Key "1_swc" not found
+
+2025-05-22 21:34:57,913 - __main__ - WARNING - Could not fetch skeleton for body ID 2: Error accessing GET https://neuprint.janelia.org/api/skeletons/skeleton/hemibrain:v1.2.1/2?format=swc
+
+Returned Error (400):
+
+Key "2_swc" not found
+
+2025-05-22 21:34:57,913 - __main__ - INFO - Successfully fetched 1 skeletons
+2025-05-22 21:34:57,913 - __main__ - INFO - Visualizing 1 neurons from EB
+2025-05-22 21:34:57,914 - __main__ - ERROR - Error creating TreeNeuron for body ID 0: TreeNeuron.__init__() missing 1 required positional argument: 'x'
+2025-05-22 21:34:57,915 - __main__ - ERROR - Traceback (most recent call last):
+  File "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/notebooks/08_visualization.py", line 235, in visualize_neurons
+    tn = navis.TreeNeuron(
+         ^^^^^^^^^^^^^^^^^
+TypeError: TreeNeuron.__init__() missing 1 required positional argument: 'x'
+
+2025-05-22 21:34:58,000 - navis - INFO - Using "plotly" backend for 3D plotting.
+2025-05-22 21:36:29,280 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:36:29,280 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:36:30,625 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:36:31,372 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:36:31,372 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:36:31,373 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:36:31,890 - __main__ - INFO - Found 63 brain regions
+2025-05-22 21:36:35,936 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:36:35,936 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:36:37,076 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:36:37,795 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:36:37,796 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:36:37,796 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:36:37,796 - __main__ - INFO - Fetching neurons from region: PB (limit: 3)
+2025-05-22 21:36:38,491 - __main__ - INFO - Created NeuronCriteria with rois=[PB]
+2025-05-22 21:36:38,491 - __main__ - INFO - Calling fetch_neurons...
+2025-05-22 21:36:44,263 - __main__ - INFO - Limiting results from 1117 to 3 neurons
+2025-05-22 21:36:44,263 - __main__ - INFO - Fetched 3 neurons from PB
+2025-05-22 21:36:44,263 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:36:44,263 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:36:44,263 - __main__ - INFO - Fetching skeletons for 3 neurons
+2025-05-22 21:36:44,882 - __main__ - INFO - Successfully fetched skeleton for body ID 0
+2025-05-22 21:36:45,089 - __main__ - WARNING - Could not fetch skeleton for body ID 1: Error accessing GET https://neuprint.janelia.org/api/skeletons/skeleton/hemibrain:v1.2.1/1?format=swc
+
+Returned Error (400):
+
+Key "1_swc" not found
+
+2025-05-22 21:36:45,397 - __main__ - WARNING - Could not fetch skeleton for body ID 2: Error accessing GET https://neuprint.janelia.org/api/skeletons/skeleton/hemibrain:v1.2.1/2?format=swc
+
+Returned Error (400):
+
+Key "2_swc" not found
+
+2025-05-22 21:36:45,397 - __main__ - INFO - Successfully fetched 1 skeletons
+2025-05-22 21:36:45,398 - __main__ - INFO - Visualizing 1 neurons from PB
+2025-05-22 21:36:45,398 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:36:45,400 - __main__ - WARNING - No valid edges for body ID 0. Using mesh representation.
+2025-05-22 21:36:45,400 - __main__ - ERROR - Error creating neuron for body ID 0: MeshNeuron.__init__() missing 1 required positional argument: 'x'
+2025-05-22 21:36:45,403 - __main__ - ERROR - Traceback (most recent call last):
+  File "/Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/notebooks/08_visualization.py", line 307, in visualize_neurons
+    tn = navis.core.MeshNeuron(
+         ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MeshNeuron.__init__() missing 1 required positional argument: 'x'
+
+2025-05-22 21:36:45,403 - __main__ - WARNING - No valid neurons to visualize
+2025-05-22 21:36:45,403 - __main__ - INFO - Visualization complete
+2025-05-22 21:37:15,818 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:37:15,818 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:37:17,542 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:37:18,253 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:37:18,253 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:37:18,253 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:37:18,254 - __main__ - INFO - Fetching neurons from region: FB (limit: 3)
+2025-05-22 21:37:18,962 - __main__ - INFO - Created NeuronCriteria with rois=[FB]
+2025-05-22 21:37:18,962 - __main__ - INFO - Calling fetch_neurons...
+2025-05-22 21:37:27,163 - __main__ - INFO - Limiting results from 6019 to 3 neurons
+2025-05-22 21:37:27,164 - __main__ - INFO - Fetched 3 neurons from FB
+2025-05-22 21:37:27,165 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:37:27,165 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:37:27,165 - __main__ - INFO - Fetching skeletons for 3 neurons
+2025-05-22 21:37:27,743 - __main__ - INFO - Successfully fetched skeleton for body ID 0
+2025-05-22 21:37:27,931 - __main__ - WARNING - Could not fetch skeleton for body ID 1: Error accessing GET https://neuprint.janelia.org/api/skeletons/skeleton/hemibrain:v1.2.1/1?format=swc
+
+Returned Error (400):
+
+Key "1_swc" not found
+
+2025-05-22 21:37:28,137 - __main__ - WARNING - Could not fetch skeleton for body ID 2: Error accessing GET https://neuprint.janelia.org/api/skeletons/skeleton/hemibrain:v1.2.1/2?format=swc
+
+Returned Error (400):
+
+Key "2_swc" not found
+
+2025-05-22 21:37:28,138 - __main__ - INFO - Successfully fetched 1 skeletons
+2025-05-22 21:37:28,138 - __main__ - INFO - Visualizing 1 neurons from FB
+2025-05-22 21:37:28,168 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:37:28,179 - __main__ - INFO - Added neuron FS4C(FQ12)_C4_R to visualization
+2025-05-22 21:37:28,497 - __main__ - INFO - Interactive figure saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/neurons_FB.html
+2025-05-22 21:37:31,698 - __main__ - INFO - Static figure saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/neurons_FB.png
+2025-05-22 21:37:31,698 - __main__ - INFO - Visualization complete
+2025-05-22 21:38:11,309 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:38:11,310 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:38:12,597 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:38:13,298 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:38:13,298 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:38:13,299 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:38:13,299 - __main__ - INFO - Fetching neurons from region: EB (limit: 5)
+2025-05-22 21:38:14,015 - __main__ - INFO - Created NeuronCriteria with rois=[EB]
+2025-05-22 21:38:14,015 - __main__ - INFO - Calling fetch_neurons...
+2025-05-22 21:38:19,678 - __main__ - INFO - Limiting results from 1062 to 5 neurons
+2025-05-22 21:38:19,678 - __main__ - INFO - Fetched 5 neurons from EB
+2025-05-22 21:38:19,678 - __main__ - INFO - Real body IDs: [0, 1, 2, 3, 4]
+2025-05-22 21:38:19,678 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:38:19,678 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:38:19,679 - __main__ - INFO - Fetching skeletons for 5 neurons
+2025-05-22 21:38:20,306 - __main__ - INFO - Successfully fetched skeleton for body ID 0
+2025-05-22 21:38:20,504 - __main__ - WARNING - Could not fetch skeleton for body ID 1: Error accessing GET https://neuprint.janelia.org/api/skeletons/skeleton/hemibrain:v1.2.1/1?format=swc
+
+Returned Error (400):
+
+Key "1_swc" not found
+
+2025-05-22 21:38:20,710 - __main__ - WARNING - Could not fetch skeleton for body ID 2: Error accessing GET https://neuprint.janelia.org/api/skeletons/skeleton/hemibrain:v1.2.1/2?format=swc
+
+Returned Error (400):
+
+Key "2_swc" not found
+
+2025-05-22 21:38:20,932 - __main__ - WARNING - Could not fetch skeleton for body ID 3: Error accessing GET https://neuprint.janelia.org/api/skeletons/skeleton/hemibrain:v1.2.1/3?format=swc
+
+Returned Error (400):
+
+Key "3_swc" not found
+
+2025-05-22 21:38:21,194 - __main__ - WARNING - Could not fetch skeleton for body ID 4: Error accessing GET https://neuprint.janelia.org/api/skeletons/skeleton/hemibrain:v1.2.1/4?format=swc
+
+Returned Error (400):
+
+Key "4_swc" not found
+
+2025-05-22 21:38:21,195 - __main__ - INFO - Successfully fetched 1 skeletons
+2025-05-22 21:38:21,195 - __main__ - INFO - Visualizing 1 neurons from EB
+2025-05-22 21:38:21,208 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:38:21,212 - __main__ - INFO - Added neuron FB8H_L to visualization
+2025-05-22 21:38:21,457 - __main__ - INFO - Interactive figure saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/neurons_EB.html
+2025-05-22 21:38:22,903 - __main__ - INFO - Static figure saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/neurons_EB.png
+2025-05-22 21:38:22,904 - __main__ - INFO - Visualization complete
+2025-05-22 21:39:06,251 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:39:06,251 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:39:07,509 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:39:08,163 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:39:08,163 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:39:08,164 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:39:08,164 - __main__ - INFO - Fetching neurons from region: EB (limit: 2)
+2025-05-22 21:39:08,929 - __main__ - INFO - Created NeuronCriteria with rois=[EB]
+2025-05-22 21:39:08,929 - __main__ - INFO - Calling fetch_neurons...
+2025-05-22 21:39:14,439 - __main__ - INFO - Limiting results from 1062 to 2 neurons
+2025-05-22 21:39:14,439 - __main__ - INFO - Fetched 2 neurons from EB
+2025-05-22 21:39:14,439 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:39:14,439 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:39:14,439 - __main__ - INFO - Fetching skeletons for 2 neurons
+2025-05-22 21:39:15,464 - __main__ - INFO - Successfully fetched skeleton for body ID 203598499
+2025-05-22 21:39:15,981 - __main__ - INFO - Successfully fetched skeleton for body ID 295136778
+2025-05-22 21:39:15,982 - __main__ - INFO - Successfully fetched 2 skeletons
+2025-05-22 21:39:15,982 - __main__ - INFO - Visualizing 2 neurons from EB
+2025-05-22 21:39:15,996 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:39:16,986 - __main__ - INFO - Added neuron 203598499 to visualization
+2025-05-22 21:39:16,986 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:39:17,922 - __main__ - INFO - Added neuron 295136778 to visualization
+2025-05-22 21:39:18,334 - __main__ - INFO - Interactive figure saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/neurons_EB.html
+2025-05-22 21:39:44,520 - __main__ - INFO - Static figure saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/neurons_EB.png
+2025-05-22 21:39:44,520 - __main__ - INFO - Visualization complete
+2025-05-22 21:39:51,311 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:39:51,311 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:39:52,922 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:39:53,716 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:39:53,717 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:39:53,717 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:39:53,717 - __main__ - INFO - Fetching neurons from region: PB (limit: 5)
+2025-05-22 21:39:54,333 - __main__ - INFO - Created NeuronCriteria with rois=[PB]
+2025-05-22 21:39:54,333 - __main__ - INFO - Calling fetch_neurons...
+2025-05-22 21:39:59,623 - __main__ - INFO - Limiting results from 1117 to 5 neurons
+2025-05-22 21:39:59,623 - __main__ - INFO - Fetched 5 neurons from PB
+2025-05-22 21:39:59,623 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:39:59,623 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:39:59,623 - __main__ - INFO - Fetching skeletons for 5 neurons
+2025-05-22 21:40:03,617 - __main__ - INFO - Successfully fetched skeleton for body ID 329566174
+2025-05-22 21:40:04,007 - __main__ - INFO - Successfully fetched skeleton for body ID 387023620
+2025-05-22 21:40:04,519 - __main__ - INFO - Successfully fetched skeleton for body ID 387364605
+2025-05-22 21:40:05,033 - __main__ - INFO - Successfully fetched skeleton for body ID 416642425
+2025-05-22 21:40:05,379 - __main__ - INFO - Successfully fetched skeleton for body ID 417998204
+2025-05-22 21:40:05,379 - __main__ - INFO - Successfully fetched 5 skeletons
+2025-05-22 21:40:05,380 - __main__ - INFO - Visualizing 5 neurons from PB
+2025-05-22 21:40:05,397 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:40:30,641 - __main__ - INFO - Added neuron 329566174 to visualization
+2025-05-22 21:40:30,642 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:40:36,290 - __main__ - INFO - Added neuron 387023620 to visualization
+2025-05-22 21:40:36,290 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:40:45,286 - __main__ - INFO - Added neuron 387364605 to visualization
+2025-05-22 21:40:45,286 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:40:56,852 - __main__ - INFO - Added neuron 416642425 to visualization
+2025-05-22 21:40:56,853 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:41:03,150 - __main__ - INFO - Added neuron 417998204 to visualization
+2025-05-22 21:41:05,662 - __main__ - INFO - Interactive figure saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/neurons_PB.html
+2025-05-22 21:44:14,961 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:44:14,961 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:44:17,028 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:44:17,876 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:44:17,876 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:44:17,876 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:44:17,876 - __main__ - INFO - Fetching neurons from region: EB (limit: 50)
+2025-05-22 21:44:18,494 - __main__ - INFO - Created NeuronCriteria with rois=[EB]
+2025-05-22 21:44:18,494 - __main__ - INFO - Calling fetch_neurons...
+2025-05-22 21:44:23,247 - __main__ - INFO - Limiting results from 1062 to 50 neurons
+2025-05-22 21:44:23,248 - __main__ - INFO - Fetched 50 neurons from EB
+2025-05-22 21:44:23,249 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:44:23,250 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:44:23,250 - __main__ - INFO - Fetching skeletons for 50 neurons
+2025-05-22 21:44:24,269 - __main__ - INFO - Successfully fetched skeleton for body ID 203598499
+2025-05-22 21:44:24,889 - __main__ - INFO - Successfully fetched skeleton for body ID 295136778
+2025-05-22 21:44:25,316 - __main__ - INFO - Successfully fetched skeleton for body ID 295473813
+2025-05-22 21:44:25,940 - __main__ - INFO - Successfully fetched skeleton for body ID 387023620
+2025-05-22 21:44:26,794 - __main__ - INFO - Successfully fetched skeleton for body ID 387364605
+2025-05-22 21:44:27,613 - __main__ - INFO - Successfully fetched skeleton for body ID 416642425
+2025-05-22 21:44:27,951 - __main__ - INFO - Successfully fetched skeleton for body ID 419639581
+2025-05-22 21:44:29,728 - __main__ - INFO - Successfully fetched skeleton for body ID 424789697
+2025-05-22 21:44:30,350 - __main__ - INFO - Successfully fetched skeleton for body ID 449438847
+2025-05-22 21:44:30,672 - __main__ - INFO - Successfully fetched skeleton for body ID 456846996
+2025-05-22 21:44:31,287 - __main__ - INFO - Successfully fetched skeleton for body ID 478375456
+2025-05-22 21:44:31,820 - __main__ - INFO - Successfully fetched skeleton for body ID 483245369
+2025-05-22 21:44:33,093 - __main__ - INFO - Successfully fetched skeleton for body ID 487925037
+2025-05-22 21:44:33,422 - __main__ - INFO - Successfully fetched skeleton for body ID 508793049
+2025-05-22 21:44:33,811 - __main__ - INFO - Successfully fetched skeleton for body ID 509410587
+2025-05-22 21:44:34,020 - __main__ - INFO - Successfully fetched skeleton for body ID 513681077
+2025-05-22 21:44:34,966 - __main__ - INFO - Successfully fetched skeleton for body ID 513784136
+2025-05-22 21:44:37,073 - __main__ - INFO - Successfully fetched skeleton for body ID 519046655
+2025-05-22 21:44:37,579 - __main__ - INFO - Successfully fetched skeleton for body ID 539462336
+2025-05-22 21:44:38,110 - __main__ - INFO - Successfully fetched skeleton for body ID 541118908
+2025-05-22 21:44:38,731 - __main__ - INFO - Successfully fetched skeleton for body ID 541127846
+2025-05-22 21:44:39,154 - __main__ - INFO - Successfully fetched skeleton for body ID 541870397
+2025-05-22 21:44:40,005 - __main__ - INFO - Successfully fetched skeleton for body ID 550081497
+2025-05-22 21:44:40,331 - __main__ - INFO - Successfully fetched skeleton for body ID 551790913
+2025-05-22 21:44:40,729 - __main__ - INFO - Successfully fetched skeleton for body ID 569775058
+2025-05-22 21:44:41,153 - __main__ - INFO - Successfully fetched skeleton for body ID 570461892
+2025-05-22 21:44:41,465 - __main__ - INFO - Successfully fetched skeleton for body ID 571140165
+2025-05-22 21:44:41,885 - __main__ - INFO - Successfully fetched skeleton for body ID 572870540
+2025-05-22 21:44:42,506 - __main__ - INFO - Successfully fetched skeleton for body ID 579268807
+2025-05-22 21:44:42,828 - __main__ - INFO - Successfully fetched skeleton for body ID 579420623
+2025-05-22 21:44:43,128 - __main__ - INFO - Successfully fetched skeleton for body ID 604791287
+2025-05-22 21:44:43,529 - __main__ - INFO - Successfully fetched skeleton for body ID 632544268
+2025-05-22 21:44:43,973 - __main__ - INFO - Successfully fetched skeleton for body ID 633546217
+2025-05-22 21:44:44,393 - __main__ - INFO - Successfully fetched skeleton for body ID 634608104
+2025-05-22 21:44:44,705 - __main__ - INFO - Successfully fetched skeleton for body ID 634962055
+2025-05-22 21:44:44,923 - __main__ - INFO - Successfully fetched skeleton for body ID 661076014
+2025-05-22 21:44:45,218 - __main__ - INFO - Successfully fetched skeleton for body ID 663190769
+2025-05-22 21:44:45,655 - __main__ - INFO - Successfully fetched skeleton for body ID 663562172
+2025-05-22 21:44:45,969 - __main__ - INFO - Successfully fetched skeleton for body ID 664645558
+2025-05-22 21:44:46,286 - __main__ - INFO - Successfully fetched skeleton for body ID 664650297
+2025-05-22 21:44:46,694 - __main__ - INFO - Successfully fetched skeleton for body ID 665314820
+2025-05-22 21:44:47,216 - __main__ - INFO - Successfully fetched skeleton for body ID 666312288
+2025-05-22 21:44:47,444 - __main__ - INFO - Successfully fetched skeleton for body ID 667754178
+2025-05-22 21:44:47,798 - __main__ - INFO - Successfully fetched skeleton for body ID 667931999
+2025-05-22 21:44:48,312 - __main__ - INFO - Successfully fetched skeleton for body ID 669965108
+2025-05-22 21:44:48,633 - __main__ - INFO - Successfully fetched skeleton for body ID 693755250
+2025-05-22 21:44:49,116 - __main__ - INFO - Successfully fetched skeleton for body ID 694920753
+2025-05-22 21:44:49,542 - __main__ - INFO - Successfully fetched skeleton for body ID 695629525
+2025-05-22 21:44:49,940 - __main__ - INFO - Successfully fetched skeleton for body ID 695956656
+2025-05-22 21:44:50,250 - __main__ - INFO - Successfully fetched skeleton for body ID 696362840
+2025-05-22 21:44:50,250 - __main__ - INFO - Successfully fetched 50 skeletons
+2025-05-22 21:44:50,251 - __main__ - INFO - Visualizing 50 neurons from EB
+2025-05-22 21:44:50,275 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:44:51,397 - __main__ - INFO - Added neuron 203598499 to visualization
+2025-05-22 21:44:51,397 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:44:52,465 - __main__ - INFO - Added neuron 295136778 to visualization
+2025-05-22 21:44:52,465 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:44:53,611 - __main__ - INFO - Added neuron 295473813 to visualization
+2025-05-22 21:44:53,612 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:44:56,283 - __main__ - INFO - Added neuron 387023620 to visualization
+2025-05-22 21:44:56,283 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:45:00,939 - __main__ - INFO - Added neuron 387364605 to visualization
+2025-05-22 21:45:00,939 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:45:07,007 - __main__ - INFO - Added neuron 416642425 to visualization
+2025-05-22 21:45:07,007 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:45:08,572 - __main__ - INFO - Added neuron 419639581 to visualization
+2025-05-22 21:45:08,572 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:45:35,942 - __main__ - INFO - Added neuron 424789697 to visualization
+2025-05-22 21:45:35,942 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:45:42,083 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:45:42,084 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:45:50,437 - __main__ - INFO - Added neuron 449438847 to visualization
+2025-05-22 21:45:50,437 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:45:56,000 - __main__ - INFO - Added neuron 456846996 to visualization
+2025-05-22 21:45:56,001 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:46:15,481 - __main__ - INFO - Added neuron 478375456 to visualization
+2025-05-22 21:46:15,481 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:46:32,553 - __main__ - INFO - Added neuron 483245369 to visualization
+2025-05-22 21:46:32,553 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:47:41,516 - __main__ - INFO - Added neuron 487925037 to visualization
+2025-05-22 21:47:41,516 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:47:55,489 - __main__ - INFO - Added neuron 508793049 to visualization
+2025-05-22 21:47:55,490 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:48:12,996 - __main__ - INFO - Added neuron 509410587 to visualization
+2025-05-22 21:48:12,996 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:48:23,913 - __main__ - INFO - Added neuron 513681077 to visualization
+2025-05-22 21:48:23,913 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:49:36,067 - __main__ - INFO - Added neuron 513784136 to visualization
+2025-05-22 21:49:36,067 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:51:07,348 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:51:07,348 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:51:26,403 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:51:26,404 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:51:27,539 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:51:28,291 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:51:28,291 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:51:28,292 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:51:28,292 - __main__ - INFO - Fetching neurons from region: FB (limit: 1)
+2025-05-22 21:51:28,936 - __main__ - INFO - Created NeuronCriteria with rois=[FB]
+2025-05-22 21:51:28,936 - __main__ - INFO - Calling fetch_neurons...
+2025-05-22 21:51:34,523 - __main__ - INFO - Limiting results from 6019 to 1 neurons
+2025-05-22 21:51:34,523 - __main__ - INFO - Fetched 1 neurons from FB
+2025-05-22 21:51:34,523 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:51:34,523 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:51:34,523 - __main__ - INFO - Fetching skeletons for 1 neurons
+2025-05-22 21:51:35,342 - __main__ - INFO - Successfully fetched skeleton for body ID 202916528
+2025-05-22 21:51:35,343 - __main__ - INFO - Successfully fetched 1 skeletons
+2025-05-22 21:51:35,343 - __main__ - INFO - Visualizing 1 neurons from FB
+2025-05-22 21:51:35,363 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:51:35,621 - __main__ - INFO - Added neuron FS4C(FQ12)_C4_R to visualization
+2025-05-22 21:51:35,893 - __main__ - INFO - Interactive figure saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/neurons_FB.html
+2025-05-22 21:51:37,875 - __main__ - INFO - Static figure saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/neurons_FB.png
+2025-05-22 21:51:37,875 - __main__ - INFO - Visualization complete
+2025-05-22 21:51:50,477 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:51:50,477 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:51:51,944 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:51:52,643 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:51:52,643 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:51:52,643 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:51:52,643 - __main__ - INFO - Fetching neurons from region: FB (limit: 5)
+2025-05-22 21:51:53,278 - __main__ - INFO - Created NeuronCriteria with rois=[FB]
+2025-05-22 21:51:53,278 - __main__ - INFO - Calling fetch_neurons...
+2025-05-22 21:51:58,736 - __main__ - INFO - Limiting results from 6019 to 5 neurons
+2025-05-22 21:51:58,736 - __main__ - INFO - Fetched 5 neurons from FB
+2025-05-22 21:51:58,736 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:51:58,736 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:51:58,736 - __main__ - INFO - Fetching skeletons for 5 neurons
+2025-05-22 21:51:59,553 - __main__ - INFO - Successfully fetched skeleton for body ID 202916528
+2025-05-22 21:51:59,758 - __main__ - INFO - Successfully fetched skeleton for body ID 203253072
+2025-05-22 21:51:59,983 - __main__ - INFO - Successfully fetched skeleton for body ID 203257652
+2025-05-22 21:52:00,184 - __main__ - INFO - Successfully fetched skeleton for body ID 203594169
+2025-05-22 21:52:00,384 - __main__ - INFO - Successfully fetched skeleton for body ID 203594175
+2025-05-22 21:52:00,384 - __main__ - INFO - Successfully fetched 5 skeletons
+2025-05-22 21:52:00,384 - __main__ - INFO - Visualizing 5 neurons from FB
+2025-05-22 21:52:00,392 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:52:00,645 - __main__ - INFO - Added neuron FS4C(FQ12)_C4_R to visualization
+2025-05-22 21:52:00,645 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:52:00,840 - __main__ - INFO - Added neuron FS4A(AB)(FQ12)_C3_R to visualization
+2025-05-22 21:52:00,840 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:52:01,007 - __main__ - INFO - Added neuron FS4C(FQ12)_C6_R to visualization
+2025-05-22 21:52:01,007 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:52:01,198 - __main__ - INFO - Added neuron FS4A(AB)(FQ12)_C4_R to visualization
+2025-05-22 21:52:01,198 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:52:01,388 - __main__ - INFO - Added neuron FS4A(AB)(FQ12)_C4_R to visualization
+2025-05-22 21:52:01,667 - __main__ - INFO - Interactive figure saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/neurons_FB.html
+2025-05-22 21:52:03,669 - __main__ - INFO - Static figure saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/neurons_FB.png
+2025-05-22 21:52:03,670 - __main__ - INFO - Visualization complete
+2025-05-22 21:52:16,628 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:52:16,628 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:52:18,055 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:52:18,755 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:52:18,755 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:52:18,755 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:52:18,755 - __main__ - INFO - Fetching neurons from region: FB (limit: 10)
+2025-05-22 21:52:19,382 - __main__ - INFO - Created NeuronCriteria with rois=[FB]
+2025-05-22 21:52:19,382 - __main__ - INFO - Calling fetch_neurons...
+2025-05-22 21:52:24,957 - __main__ - INFO - Limiting results from 6019 to 10 neurons
+2025-05-22 21:52:24,957 - __main__ - INFO - Fetched 10 neurons from FB
+2025-05-22 21:52:24,958 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:52:24,958 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:52:24,958 - __main__ - INFO - Fetching skeletons for 10 neurons
+2025-05-22 21:52:25,765 - __main__ - INFO - Successfully fetched skeleton for body ID 202916528
+2025-05-22 21:52:25,967 - __main__ - INFO - Successfully fetched skeleton for body ID 203253072
+2025-05-22 21:52:26,198 - __main__ - INFO - Successfully fetched skeleton for body ID 203257652
+2025-05-22 21:52:26,397 - __main__ - INFO - Successfully fetched skeleton for body ID 203594169
+2025-05-22 21:52:26,600 - __main__ - INFO - Successfully fetched skeleton for body ID 203594175
+2025-05-22 21:52:26,902 - __main__ - INFO - Successfully fetched skeleton for body ID 203598499
+2025-05-22 21:52:27,099 - __main__ - INFO - Successfully fetched skeleton for body ID 203598504
+2025-05-22 21:52:27,308 - __main__ - INFO - Successfully fetched skeleton for body ID 203598542
+2025-05-22 21:52:27,505 - __main__ - INFO - Successfully fetched skeleton for body ID 203598557
+2025-05-22 21:52:27,772 - __main__ - INFO - Successfully fetched skeleton for body ID 203931040
+2025-05-22 21:52:27,772 - __main__ - INFO - Successfully fetched 10 skeletons
+2025-05-22 21:52:27,772 - __main__ - INFO - Visualizing 10 neurons from FB
+2025-05-22 21:52:27,779 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:52:28,027 - __main__ - INFO - Added neuron FS4C(FQ12)_C4_R to visualization
+2025-05-22 21:52:28,027 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:52:28,219 - __main__ - INFO - Added neuron FS4A(AB)(FQ12)_C3_R to visualization
+2025-05-22 21:52:28,219 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:52:28,384 - __main__ - INFO - Added neuron FS4C(FQ12)_C6_R to visualization
+2025-05-22 21:52:28,384 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:52:28,570 - __main__ - INFO - Added neuron FS4A(AB)(FQ12)_C4_R to visualization
+2025-05-22 21:52:28,570 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:52:28,757 - __main__ - INFO - Added neuron FS4A(AB)(FQ12)_C4_R to visualization
+2025-05-22 21:52:28,758 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:52:29,148 - __main__ - INFO - Added neuron FB8H_L to visualization
+2025-05-22 21:52:29,149 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:52:29,311 - __main__ - INFO - Added neuron FS4A(FQ12)_C5_R to visualization
+2025-05-22 21:52:29,311 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:52:29,502 - __main__ - INFO - Added neuron FS4B(FQ12)_C4_R to visualization
+2025-05-22 21:52:29,502 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:52:29,742 - __main__ - INFO - Added neuron FS4B(FQ12)_C8_R to visualization
+2025-05-22 21:52:29,743 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:52:29,950 - __main__ - INFO - Added neuron FS4A(AB)(FQ12)_C3_R to visualization
+2025-05-22 21:52:30,303 - __main__ - INFO - Interactive figure saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/neurons_FB.html
+2025-05-22 21:52:32,527 - __main__ - INFO - Static figure saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/neurons_FB.png
+2025-05-22 21:52:32,530 - __main__ - INFO - Visualization complete
+2025-05-22 21:52:48,486 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:52:48,487 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:52:49,942 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:52:50,683 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:52:50,683 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:52:50,684 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:52:50,684 - __main__ - INFO - Fetching neurons from region: FB (limit: 100)
+2025-05-22 21:52:51,364 - __main__ - INFO - Created NeuronCriteria with rois=[FB]
+2025-05-22 21:52:51,364 - __main__ - INFO - Calling fetch_neurons...
+2025-05-22 21:52:56,838 - __main__ - INFO - Limiting results from 6019 to 100 neurons
+2025-05-22 21:52:56,838 - __main__ - INFO - Fetched 100 neurons from FB
+2025-05-22 21:52:56,840 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:52:56,841 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:52:56,841 - __main__ - INFO - Fetching skeletons for 100 neurons
+2025-05-22 21:52:57,657 - __main__ - INFO - Successfully fetched skeleton for body ID 202916528
+2025-05-22 21:52:57,857 - __main__ - INFO - Successfully fetched skeleton for body ID 203253072
+2025-05-22 21:52:58,064 - __main__ - INFO - Successfully fetched skeleton for body ID 203257652
+2025-05-22 21:52:58,284 - __main__ - INFO - Successfully fetched skeleton for body ID 203594169
+2025-05-22 21:52:58,496 - __main__ - INFO - Successfully fetched skeleton for body ID 203594175
+2025-05-22 21:52:58,803 - __main__ - INFO - Successfully fetched skeleton for body ID 203598499
+2025-05-22 21:52:59,011 - __main__ - INFO - Successfully fetched skeleton for body ID 203598504
+2025-05-22 21:52:59,229 - __main__ - INFO - Successfully fetched skeleton for body ID 203598542
+2025-05-22 21:52:59,437 - __main__ - INFO - Successfully fetched skeleton for body ID 203598557
+2025-05-22 21:52:59,637 - __main__ - INFO - Successfully fetched skeleton for body ID 203931040
+2025-05-22 21:52:59,844 - __main__ - INFO - Successfully fetched skeleton for body ID 204613133
+2025-05-22 21:53:00,155 - __main__ - INFO - Successfully fetched skeleton for body ID 204962646
+2025-05-22 21:53:00,360 - __main__ - INFO - Successfully fetched skeleton for body ID 205299889
+2025-05-22 21:53:00,664 - __main__ - INFO - Successfully fetched skeleton for body ID 234292899
+2025-05-22 21:53:00,876 - __main__ - INFO - Successfully fetched skeleton for body ID 235985275
+2025-05-22 21:53:01,180 - __main__ - INFO - Successfully fetched skeleton for body ID 236330337
+2025-05-22 21:53:01,476 - __main__ - INFO - Successfully fetched skeleton for body ID 236331138
+2025-05-22 21:53:01,705 - __main__ - INFO - Successfully fetched skeleton for body ID 264986706
+2025-05-22 21:53:02,011 - __main__ - INFO - Successfully fetched skeleton for body ID 265120597
+2025-05-22 21:53:02,376 - __main__ - INFO - Successfully fetched skeleton for body ID 265120677
+2025-05-22 21:53:02,571 - __main__ - INFO - Successfully fetched skeleton for body ID 265655867
+2025-05-22 21:53:02,900 - __main__ - INFO - Successfully fetched skeleton for body ID 266536576
+2025-05-22 21:53:03,108 - __main__ - INFO - Successfully fetched skeleton for body ID 294450495
+2025-05-22 21:53:03,423 - __main__ - INFO - Successfully fetched skeleton for body ID 294791509
+2025-05-22 21:53:03,726 - __main__ - INFO - Successfully fetched skeleton for body ID 294800293
+2025-05-22 21:53:04,044 - __main__ - INFO - Successfully fetched skeleton for body ID 295116205
+2025-05-22 21:53:04,266 - __main__ - INFO - Successfully fetched skeleton for body ID 295133452
+2025-05-22 21:53:04,586 - __main__ - INFO - Successfully fetched skeleton for body ID 295136778
+2025-05-22 21:53:04,904 - __main__ - INFO - Successfully fetched skeleton for body ID 295136965
+2025-05-22 21:53:05,290 - __main__ - INFO - Successfully fetched skeleton for body ID 295141570
+2025-05-22 21:53:05,616 - __main__ - INFO - Successfully fetched skeleton for body ID 295141618
+2025-05-22 21:53:05,919 - __main__ - INFO - Successfully fetched skeleton for body ID 295473813
+2025-05-22 21:53:06,119 - __main__ - INFO - Successfully fetched skeleton for body ID 295474441
+2025-05-22 21:53:06,314 - __main__ - INFO - Successfully fetched skeleton for body ID 295474876
+2025-05-22 21:53:06,770 - __main__ - INFO - Successfully fetched skeleton for body ID 295477903
+2025-05-22 21:53:06,986 - __main__ - INFO - Successfully fetched skeleton for body ID 295490804
+2025-05-22 21:53:07,191 - __main__ - INFO - Successfully fetched skeleton for body ID 295490863
+2025-05-22 21:53:07,393 - __main__ - INFO - Successfully fetched skeleton for body ID 295815897
+2025-05-22 21:53:07,619 - __main__ - INFO - Successfully fetched skeleton for body ID 295819960
+2025-05-22 21:53:07,928 - __main__ - INFO - Successfully fetched skeleton for body ID 295820069
+2025-05-22 21:53:08,252 - __main__ - INFO - Successfully fetched skeleton for body ID 295820085
+2025-05-22 21:53:08,469 - __main__ - INFO - Successfully fetched skeleton for body ID 295823782
+2025-05-22 21:53:08,682 - __main__ - INFO - Successfully fetched skeleton for body ID 295827899
+2025-05-22 21:53:08,894 - __main__ - INFO - Successfully fetched skeleton for body ID 296143798
+2025-05-22 21:53:09,289 - __main__ - INFO - Successfully fetched skeleton for body ID 296155122
+2025-05-22 21:53:09,498 - __main__ - INFO - Successfully fetched skeleton for body ID 296156918
+2025-05-22 21:53:09,721 - __main__ - INFO - Successfully fetched skeleton for body ID 296160764
+2025-05-22 21:53:10,042 - __main__ - INFO - Successfully fetched skeleton for body ID 296497316
+2025-05-22 21:53:10,342 - __main__ - INFO - Successfully fetched skeleton for body ID 296514350
+2025-05-22 21:53:10,553 - __main__ - INFO - Successfully fetched skeleton for body ID 296531421
+2025-05-22 21:53:10,764 - __main__ - INFO - Successfully fetched skeleton for body ID 296690817
+2025-05-22 21:53:11,066 - __main__ - INFO - Successfully fetched skeleton for body ID 296838079
+2025-05-22 21:53:11,288 - __main__ - INFO - Successfully fetched skeleton for body ID 296851235
+2025-05-22 21:53:11,592 - __main__ - INFO - Successfully fetched skeleton for body ID 296851261
+2025-05-22 21:53:11,913 - __main__ - INFO - Successfully fetched skeleton for body ID 296855409
+2025-05-22 21:53:12,133 - __main__ - INFO - Successfully fetched skeleton for body ID 296867934
+2025-05-22 21:53:12,336 - __main__ - INFO - Successfully fetched skeleton for body ID 296872298
+2025-05-22 21:53:12,543 - __main__ - INFO - Successfully fetched skeleton for body ID 296872415
+2025-05-22 21:53:12,747 - __main__ - INFO - Successfully fetched skeleton for body ID 296880800
+2025-05-22 21:53:13,042 - __main__ - INFO - Successfully fetched skeleton for body ID 297166053
+2025-05-22 21:53:13,385 - __main__ - INFO - Successfully fetched skeleton for body ID 297178509
+2025-05-22 21:53:13,685 - __main__ - INFO - Successfully fetched skeleton for body ID 297183251
+2025-05-22 21:53:14,008 - __main__ - INFO - Successfully fetched skeleton for body ID 297519807
+2025-05-22 21:53:14,314 - __main__ - INFO - Successfully fetched skeleton for body ID 297908595
+2025-05-22 21:53:14,511 - __main__ - INFO - Successfully fetched skeleton for body ID 298055752
+2025-05-22 21:53:14,811 - __main__ - INFO - Successfully fetched skeleton for body ID 298405402
+2025-05-22 21:53:15,123 - __main__ - INFO - Successfully fetched skeleton for body ID 298927224
+2025-05-22 21:53:15,582 - __main__ - INFO - Successfully fetched skeleton for body ID 298944444
+2025-05-22 21:53:15,783 - __main__ - INFO - Successfully fetched skeleton for body ID 299078990
+2025-05-22 21:53:16,008 - __main__ - INFO - Successfully fetched skeleton for body ID 300455904
+2025-05-22 21:53:16,406 - __main__ - INFO - Successfully fetched skeleton for body ID 325489440
+2025-05-22 21:53:16,610 - __main__ - INFO - Successfully fetched skeleton for body ID 326184549
+2025-05-22 21:53:17,886 - __main__ - INFO - Successfully fetched skeleton for body ID 326253554
+2025-05-22 21:53:18,104 - __main__ - INFO - Successfully fetched skeleton for body ID 326521082
+2025-05-22 21:53:18,304 - __main__ - INFO - Successfully fetched skeleton for body ID 326525255
+2025-05-22 21:53:18,626 - __main__ - INFO - Successfully fetched skeleton for body ID 326525339
+2025-05-22 21:53:18,826 - __main__ - INFO - Successfully fetched skeleton for body ID 326849964
+2025-05-22 21:53:19,030 - __main__ - INFO - Successfully fetched skeleton for body ID 326870795
+2025-05-22 21:53:19,232 - __main__ - INFO - Successfully fetched skeleton for body ID 326875404
+2025-05-22 21:53:19,435 - __main__ - INFO - Successfully fetched skeleton for body ID 326884203
+2025-05-22 21:53:19,677 - __main__ - INFO - Successfully fetched skeleton for body ID 326884264
+2025-05-22 21:53:20,036 - __main__ - INFO - Successfully fetched skeleton for body ID 327203386
+2025-05-22 21:53:20,389 - __main__ - INFO - Successfully fetched skeleton for body ID 327225145
+2025-05-22 21:53:20,591 - __main__ - INFO - Successfully fetched skeleton for body ID 327398074
+2025-05-22 21:53:20,796 - __main__ - INFO - Successfully fetched skeleton for body ID 327565511
+2025-05-22 21:53:20,993 - __main__ - INFO - Successfully fetched skeleton for body ID 327565800
+2025-05-22 21:53:21,249 - __main__ - INFO - Successfully fetched skeleton for body ID 327566137
+2025-05-22 21:53:21,774 - __main__ - INFO - Successfully fetched skeleton for body ID 327730878
+2025-05-22 21:53:23,557 - __main__ - INFO - Successfully fetched skeleton for body ID 328010530
+2025-05-22 21:53:24,064 - __main__ - INFO - Successfully fetched skeleton for body ID 328213227
+2025-05-22 21:53:24,495 - __main__ - INFO - Successfully fetched skeleton for body ID 328744210
+2025-05-22 21:53:25,020 - __main__ - INFO - Successfully fetched skeleton for body ID 328930845
+2025-05-22 21:53:25,559 - __main__ - INFO - Successfully fetched skeleton for body ID 329102850
+2025-05-22 21:53:26,165 - __main__ - INFO - Successfully fetched skeleton for body ID 329289084
+2025-05-22 21:53:28,277 - __main__ - INFO - Successfully fetched skeleton for body ID 329566174
+2025-05-22 21:53:28,789 - __main__ - INFO - Successfully fetched skeleton for body ID 329638509
+2025-05-22 21:53:29,116 - __main__ - INFO - Successfully fetched skeleton for body ID 329772284
+2025-05-22 21:53:29,639 - __main__ - INFO - Successfully fetched skeleton for body ID 329983926
+2025-05-22 21:53:30,067 - __main__ - INFO - Successfully fetched skeleton for body ID 330661573
+2025-05-22 21:53:30,374 - __main__ - INFO - Successfully fetched skeleton for body ID 355651857
+2025-05-22 21:53:30,374 - __main__ - INFO - Successfully fetched 100 skeletons
+2025-05-22 21:53:30,375 - __main__ - INFO - Visualizing 100 neurons from FB
+2025-05-22 21:53:30,383 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:30,626 - __main__ - INFO - Added neuron FS4C(FQ12)_C4_R to visualization
+2025-05-22 21:53:30,626 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:30,819 - __main__ - INFO - Added neuron FS4A(AB)(FQ12)_C3_R to visualization
+2025-05-22 21:53:30,819 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:30,983 - __main__ - INFO - Added neuron FS4C(FQ12)_C6_R to visualization
+2025-05-22 21:53:30,983 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:31,171 - __main__ - INFO - Added neuron FS4A(AB)(FQ12)_C4_R to visualization
+2025-05-22 21:53:31,171 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:31,362 - __main__ - INFO - Added neuron FS4A(AB)(FQ12)_C4_R to visualization
+2025-05-22 21:53:31,362 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:31,748 - __main__ - INFO - Added neuron FB8H_L to visualization
+2025-05-22 21:53:31,748 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:31,909 - __main__ - INFO - Added neuron FS4A(FQ12)_C5_R to visualization
+2025-05-22 21:53:31,909 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:32,100 - __main__ - INFO - Added neuron FS4B(FQ12)_C4_R to visualization
+2025-05-22 21:53:32,100 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:32,335 - __main__ - INFO - Added neuron FS4B(FQ12)_C8_R to visualization
+2025-05-22 21:53:32,335 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:32,539 - __main__ - INFO - Added neuron FS4A(AB)(FQ12)_C3_R to visualization
+2025-05-22 21:53:32,539 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:32,747 - __main__ - INFO - Added neuron FB8E_L to visualization
+2025-05-22 21:53:32,747 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:33,223 - __main__ - INFO - Added neuron FB7L_L to visualization
+2025-05-22 21:53:33,223 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:33,430 - __main__ - INFO - Added neuron FB8F_b_L to visualization
+2025-05-22 21:53:33,430 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:33,935 - __main__ - INFO - Added neuron FB7M_L to visualization
+2025-05-22 21:53:33,936 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:34,117 - __main__ - INFO - Added neuron FB8E_L to visualization
+2025-05-22 21:53:34,117 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:34,487 - __main__ - INFO - Added neuron FB7I_L to visualization
+2025-05-22 21:53:34,487 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:34,720 - __main__ - INFO - Added neuron FB7G_L to visualization
+2025-05-22 21:53:34,721 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:34,897 - __main__ - INFO - Added neuron FS4B(AB)(FQ12)_C3_R to visualization
+2025-05-22 21:53:34,898 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:35,216 - __main__ - INFO - Added neuron FB1D_R to visualization
+2025-05-22 21:53:35,216 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:35,557 - __main__ - INFO - Added neuron FB8A_R to visualization
+2025-05-22 21:53:35,557 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:35,747 - __main__ - INFO - Added neuron FB8F_b_L to visualization
+2025-05-22 21:53:35,747 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:36,052 - __main__ - INFO - Added neuron FB7G_R to visualization
+2025-05-22 21:53:36,052 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:36,237 - __main__ - INFO - Added neuron SA1_a_R to visualization
+2025-05-22 21:53:36,238 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:36,531 - __main__ - INFO - Added neuron FB1D_R to visualization
+2025-05-22 21:53:36,532 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:36,957 - __main__ - INFO - Added neuron FB7K_R to visualization
+2025-05-22 21:53:36,957 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:37,225 - __main__ - INFO - Added neuron SA1_a_R to visualization
+2025-05-22 21:53:37,226 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:37,456 - __main__ - INFO - Added neuron FB9A_R to visualization
+2025-05-22 21:53:37,457 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:37,785 - __main__ - INFO - Added neuron FB8A_R to visualization
+2025-05-22 21:53:37,785 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:38,049 - __main__ - INFO - Added neuron FB1E_b_R to visualization
+2025-05-22 21:53:38,049 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:38,311 - __main__ - INFO - Added neuron SA1_a_R to visualization
+2025-05-22 21:53:38,311 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:38,576 - __main__ - INFO - Added neuron FB9C_b_R to visualization
+2025-05-22 21:53:38,576 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:38,859 - __main__ - INFO - Added neuron SAF(FB9)_R to visualization
+2025-05-22 21:53:38,859 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:39,087 - __main__ - INFO - Added neuron SA3_bilateral_R to visualization
+2025-05-22 21:53:39,088 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:39,310 - __main__ - INFO - Added neuron SA1_b_R to visualization
+2025-05-22 21:53:39,310 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:40,068 - __main__ - INFO - Added neuron FB7M_R to visualization
+2025-05-22 21:53:40,068 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:40,218 - __main__ - INFO - Added neuron FS4B(FQ12)_C9_L to visualization
+2025-05-22 21:53:40,218 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:40,384 - __main__ - INFO - Added neuron FS4B(FQ12)_C8_L to visualization
+2025-05-22 21:53:40,385 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:40,525 - __main__ - INFO - Added neuron FB9B_e_R to visualization
+2025-05-22 21:53:40,525 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:40,773 - __main__ - INFO - Added neuron SA1_a_R to visualization
+2025-05-22 21:53:40,773 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:41,147 - __main__ - INFO - Added neuron FB8H_R to visualization
+2025-05-22 21:53:41,147 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:41,441 - __main__ - INFO - Added neuron FB8E_R to visualization
+2025-05-22 21:53:41,441 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:41,590 - __main__ - INFO - Added neuron FS4B(FQ12)_C6_L to visualization
+2025-05-22 21:53:41,590 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:41,833 - __main__ - INFO - Added neuron FS4B(FQ12)_C2_L to visualization
+2025-05-22 21:53:41,833 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:42,047 - __main__ - INFO - Added neuron FB9A_R to visualization
+2025-05-22 21:53:42,047 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:42,465 - __main__ - INFO - Added neuron FB8F_b_R to visualization
+2025-05-22 21:53:42,465 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:42,692 - __main__ - INFO - Added neuron SA1_b_R to visualization
+2025-05-22 21:53:42,692 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:42,975 - __main__ - INFO - Added neuron FB8E_R to visualization
+2025-05-22 21:53:42,975 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:43,317 - __main__ - INFO - Added neuron SAF(FB9)_R to visualization
+2025-05-22 21:53:43,318 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:43,795 - __main__ - INFO - Added neuron FB1B_R to visualization
+2025-05-22 21:53:43,795 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:44,013 - __main__ - INFO - Added neuron FS4C(FQ12)_C9_L to visualization
+2025-05-22 21:53:44,013 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:44,207 - __main__ - INFO - Added neuron FS4A(FQ12)_C6_R to visualization
+2025-05-22 21:53:44,208 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:44,747 - __main__ - INFO - Added neuron FB8I_R to visualization
+2025-05-22 21:53:44,748 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:44,971 - __main__ - INFO - Added neuron SLP409_R to visualization
+2025-05-22 21:53:44,972 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:45,349 - __main__ - INFO - Added neuron FB8G_R to visualization
+2025-05-22 21:53:45,349 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:45,898 - __main__ - INFO - Added neuron FB8I_R to visualization
+2025-05-22 21:53:45,899 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:46,036 - __main__ - INFO - Added neuron FS4A(AB)(FQ12)_C8_L to visualization
+2025-05-22 21:53:46,036 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:46,196 - __main__ - INFO - Added neuron FS4A(FQ12)_C7_L to visualization
+2025-05-22 21:53:46,196 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:46,341 - __main__ - INFO - Added neuron FS4A(FQ12)_C7_L to visualization
+2025-05-22 21:53:46,341 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:46,582 - __main__ - INFO - Added neuron FB8E_R to visualization
+2025-05-22 21:53:46,582 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:47,032 - __main__ - INFO - Added neuron FB8F_b_R to visualization
+2025-05-22 21:53:47,032 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:47,514 - __main__ - INFO - Added neuron FB8F_a_R to visualization
+2025-05-22 21:53:47,514 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:47,910 - __main__ - INFO - Added neuron FB7A_R to visualization
+2025-05-22 21:53:47,910 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:48,315 - __main__ - INFO - Added neuron FB8F_b_R to visualization
+2025-05-22 21:53:48,315 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:48,717 - __main__ - INFO - Added neuron FB5G_R to visualization
+2025-05-22 21:53:48,718 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:48,974 - __main__ - INFO - Added neuron FB8F_b_L to visualization
+2025-05-22 21:53:48,974 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:49,300 - __main__ - INFO - Added neuron FB6T_L to visualization
+2025-05-22 21:53:49,300 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:49,789 - __main__ - INFO - Added neuron FB7F_R to visualization
+2025-05-22 21:53:49,789 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:50,576 - __main__ - INFO - Added neuron FB6U_R to visualization
+2025-05-22 21:53:50,576 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:50,854 - __main__ - INFO - Added neuron FB7F_L to visualization
+2025-05-22 21:53:50,854 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:51,045 - __main__ - INFO - Added neuron FB8F_a_L to visualization
+2025-05-22 21:53:51,045 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:51,623 - __main__ - INFO - Added neuron FB8D_R to visualization
+2025-05-22 21:53:51,623 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:51,782 - __main__ - INFO - Added neuron FS4B(AB)(FQ12)_C8_L to visualization
+2025-05-22 21:53:51,783 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:55,373 - __main__ - INFO - Added neuron SMP454_R to visualization
+2025-05-22 21:53:55,373 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:55,615 - __main__ - INFO - Added neuron FS4C(FQ12)_C7_L to visualization
+2025-05-22 21:53:55,615 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:55,791 - __main__ - INFO - Added neuron FS4B(FQ12)_C8_L to visualization
+2025-05-22 21:53:55,791 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:56,038 - __main__ - INFO - Added neuron FS4B(FQ12)_C3_L to visualization
+2025-05-22 21:53:56,038 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:56,165 - __main__ - INFO - Added neuron FB9B_c_R to visualization
+2025-05-22 21:53:56,165 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:56,332 - __main__ - INFO - Added neuron FB9B_e_R to visualization
+2025-05-22 21:53:56,332 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:56,508 - __main__ - INFO - Added neuron FS4A(FQ12)_C8_L to visualization
+2025-05-22 21:53:56,508 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:56,624 - __main__ - INFO - Added neuron FS4A(FQ12)_C5_L to visualization
+2025-05-22 21:53:56,624 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:56,834 - __main__ - INFO - Added neuron FS4A(FQ12)_C8_L to visualization
+2025-05-22 21:53:56,834 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:57,278 - __main__ - INFO - Added neuron FB7A_R to visualization
+2025-05-22 21:53:57,278 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:57,523 - __main__ - INFO - Added neuron FS4A(AB)(FQ12)_C2_L to visualization
+2025-05-22 21:53:57,523 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:57,638 - __main__ - INFO - Added neuron SA3_bilateral_L to visualization
+2025-05-22 21:53:57,638 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:57,785 - __main__ - INFO - Added neuron FS4A(FQ12)_C8_L to visualization
+2025-05-22 21:53:57,785 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:57,944 - __main__ - INFO - Added neuron FS4A(FQ12)_C7_L to visualization
+2025-05-22 21:53:57,944 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:58,111 - __main__ - INFO - Added neuron FS4A(FQ12)_C4_L to visualization
+2025-05-22 21:53:58,111 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:53:58,607 - __main__ - INFO - Added neuron FB6Z_L to visualization
+2025-05-22 21:53:58,607 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:54:01,451 - __main__ - INFO - Added neuron SMP454(PDM12)_L to visualization
+2025-05-22 21:54:01,451 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:54:02,000 - __main__ - INFO - Added neuron FB8F_a_R to visualization
+2025-05-22 21:54:02,000 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:54:02,275 - __main__ - INFO - Added neuron FB5G_L to visualization
+2025-05-22 21:54:02,275 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:54:02,841 - __main__ - INFO - Added neuron FB8F_a_R to visualization
+2025-05-22 21:54:02,841 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:54:03,050 - __main__ - INFO - Added neuron FB8F_a_L to visualization
+2025-05-22 21:54:03,050 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:54:03,642 - __main__ - INFO - Added neuron FB6G_R to visualization
+2025-05-22 21:54:03,642 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:54:08,637 - __main__ - INFO - Added neuron OA-VPM3(NO2/NO3)_R to visualization
+2025-05-22 21:54:08,637 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:54:09,204 - __main__ - INFO - Added neuron FB7E_R to visualization
+2025-05-22 21:54:09,204 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:54:09,455 - __main__ - INFO - Added neuron FB6S_L to visualization
+2025-05-22 21:54:09,455 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:54:10,088 - __main__ - INFO - Added neuron FB5G_R to visualization
+2025-05-22 21:54:10,088 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:54:10,580 - __main__ - INFO - Added neuron FB6S_R to visualization
+2025-05-22 21:54:10,581 - __main__ - INFO - Converting SWC DataFrame to vertices and edges
+2025-05-22 21:54:10,896 - __main__ - INFO - Added neuron FR2(FQ4)_C3_L_small to visualization
+2025-05-22 21:54:14,085 - __main__ - INFO - Interactive figure saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/neurons_FB.html
+2025-05-22 21:54:26,205 - __main__ - INFO - Static figure saved to /Users/cosimoradler/Desktop/1/Semester 4/Modeling Real World Problmes/FLY BRAIN/results/figures/neurons_FB.png
+2025-05-22 21:54:26,207 - __main__ - INFO - Visualization complete
+2025-05-22 21:54:57,068 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:54:57,069 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:54:58,708 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:54:59,429 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:54:59,429 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:54:59,430 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:54:59,430 - __main__ - INFO - Fetching neurons from region: LA (limit: 5)
+2025-05-22 21:55:19,055 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:55:19,056 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:55:20,134 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:55:20,884 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:55:20,884 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:55:20,884 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:55:20,884 - __main__ - INFO - Fetching neurons from region: AL (limit: 5)
+2025-05-22 21:55:38,024 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:55:38,024 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:55:39,091 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:55:39,775 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:55:39,775 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:55:39,775 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:55:39,775 - __main__ - INFO - Fetching neurons from region: AL (limit: 5)
+2025-05-22 21:55:49,401 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:55:49,401 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-22 21:55:50,495 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:55:51,196 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:55:51,196 - __main__ - INFO - Connecting to neuPrint server: https://neuprint.janelia.org, dataset: hemibrain:v1.2.1
+2025-05-22 21:55:51,196 - __main__ - INFO - Connected to neuPrint server: https://neuprint.janelia.org
+2025-05-22 21:55:51,196 - __main__ - INFO - Fetching neurons from region: MB (limit: 5)
+2025-05-22 21:56:03,407 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-22 21:56:03,407 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-23 07:12:59,210 - numexpr.utils - INFO - Note: NumExpr detected 14 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-23 07:12:59,211 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.

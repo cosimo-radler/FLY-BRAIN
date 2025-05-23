@@ -162,6 +162,32 @@ This will generate two key visualizations:
 1. A comprehensive comparison plot showing all regions, attack strategies, and models side-by-side
 2. A percolation by strategy plot comparing the original networks across attack strategies
 
+### 3D Visualization
+
+To visualize the 3D structure of neurons in specific brain regions:
+
+```
+python notebooks/08_visualization.py
+```
+
+This script will:
+1. Connect to the neuPrint API
+2. Display a list of available brain regions
+3. Allow you to select a specific region for visualization
+
+To visualize a specific region directly:
+
+```
+python notebooks/08_visualization.py --region FB --limit 25
+```
+
+Optional parameters:
+- `--region`: Brain region to visualize (e.g., FB, EB, MB)
+- `--limit`: Maximum number of neurons to fetch (default: 50)
+- `--seed`: Random seed for reproducibility (default: 42)
+
+This script uses the navis library to create 3D visualizations of neuron morphology, displaying the skeletal structure of neurons in the specified brain region.
+
 ## Brain Regions
 
 The following brain regions are included:
