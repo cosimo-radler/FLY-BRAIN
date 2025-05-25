@@ -320,14 +320,6 @@ The following brain regions are included:
 - LH: Lateral Horn
 - AL: Antennal Lobe
 
-## Next Steps
-
-1. Implement spectral sparsification techniques
-2. Compare structural properties across brain regions in more detail
-3. Implement additional percolation strategies
-4. Develop more sophisticated null models
-5. Import the GEXF files into visualization tools like Gephi
-
 ## Dependencies
 
 - neuprint-python
